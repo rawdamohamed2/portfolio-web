@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #0D0D0D;
+    color: #FFFFFF;
+}
+.logoFont{
+    font-family: "Delius", cursive;
+}
+.span{
+    text-shadow: 0 0 5px #00d9ff, 0 0 15px #00FFF7;
+}
+.buttonLight{
+    background-color: transparent;
+    border: 1px solid var(--font-color) ;
+    color: var(--effect-color);
+    box-shadow: none;
+    transition: all 0.2s;
+}
+.buttonLight:hover{
+    background-color: var(--secondBackground-color);
+    color: var(--font-color);
+    border: 1px solid var(--effect-color);
+    box-shadow: 0px 0px 7px var(--effect-color);
+}
+#Home{
+    overflow: hidden;
+}
+.container{
+    width: 85%;
+}
+.active {
+  transform: translateX(0) !important;
+}
+ul li{
+    font-size: 1.1em;
+}
+.start{
+    margin-top: 10px;
+}
+.skillCradHover:hover .skillBodyHover{
+    color: var(--font-color);
+}
+.skillBodyHover{
+    transition: all 1s;
+}
+.card-body:hover .card-text{
+    color: var(--font-color);
+}
+
+.card:hover .card-text{
+    color: var(--font-color);
+}
+.card-text{
+    transition: all 0.2s;
+}
+
+.featurelink{
+    text-shadow: 0 0 4px #605f5f;
+    transition: all 0.3s;
+}
+.featurelink:hover{
+    text-shadow: 0 0 4px #00FFF7;
+}
+.active {
+    border-bottom: #00d9ff 1px solid;
+    text-shadow:0 0 10px #ffffff;
+    color: #00d9ff;
+}
+.navbar-scrolled{
+    background-color: #1b1b1bc1;
+    transition: all 0.3s;
+}
+.navbar-default{
+    background-color: transparent;
+    transition: all 0.3s;
+}
