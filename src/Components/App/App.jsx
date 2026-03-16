@@ -10,6 +10,7 @@ import AnimatedBg from '../AnimatedBg/AnimatedBg'
 import Footer from '../Footer/Footer'
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Services from "../Services/Services.jsx";
 
 export default function App() {
   useEffect(() => {
@@ -26,6 +27,7 @@ export default function App() {
       <Education/>
       <Projects/>
       <Skills/>
+        <Services/>
       {/* <Skillop/> */}
       <Contact/>
       <Footer/>

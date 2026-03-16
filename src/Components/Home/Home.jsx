@@ -46,7 +46,7 @@ export default function Home() {
             <h1 className= 'md:text-[4rem] text-[2.6rem] font-medium'><span className='logoFont block  span'>Hello,</span> 
                I'm Rawda Mohamed
             </h1>
-            <h2 className="md:text-[2.5rem] text-[2.1rem] text-medium ">Frontend <span className='text-effectColor'>{text}</span><span className="cursor">|</span></h2>
+            <h2 className="md:text-[2.5rem] text-[2.1rem] text-medium ">Web <span className='text-effectColor'>{text}</span><span className="cursor">|</span></h2>
 
             <div className="buttons mt-4 ">
               <Link to="projects" type="button" className='btn text-[1.23rem] text-effectColor md:px-5 px-4 py-2 rounded-lg shadow-[0px_0px_15px_#00FFF7] hover:text-fontColor hover:shadow-[0px_0px_30px_#00FFF7] hover:bg-bgColor '>Explore My Work</Link>

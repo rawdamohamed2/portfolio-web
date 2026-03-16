@@ -5,7 +5,14 @@ export default function Contact() {
     <Element name="contact" className=" py-5 bg-SecondbgColor">
           <div className="container mx-auto">
             <div className="contactheader py-4" data-aos="zoom-in" data-aos-delay="500">
-              <h1 className=" py-3 text-center md:text-[3.3rem] text-4xl font-bold relative after:content-[''] after:block lg:after:w-[40%] md:after:w-[75%] sm:after:w-[70%] after:w-[75%] after:mx-auto after:h-[0.1px] after:bg-hoverBtn md:after:mt-7 after:mt-5">Let's Work <span className="text-effectColor">Together</span></h1>
+              <h1 className=" py-2 text-4xl font-bold text-center relative after:content-['']
+                        after:block lg:after:w-[30%] md:after:w-[30%] sm:after:w-[40%] after:w-full after:mx-auto after:h-[0.2px]
+                        after:bg-hoverBtn md:after:mt-6 after:mt-4 tracking-widest mb-2">Let's Work <span className="text-effectColor">Together</span></h1>
+                <div className="flex justify-center items-center gap-2 mb-6">
+                    <div className="h-0.5 w-12 bg-effectColor"></div>
+                    <div className="w-2 h-2 rounded-full border-2 border-effectColor"></div>
+                    <div className="h-0.5 w-12 bg-effectColor"></div>
+                </div>
             </div>
           
             <form className="grid grid-cols-1 gap-3"  action="https://getform.io/f/bejlmloa" method="POST" data-aos="fade-up" data-aos-delay="500">

@@ -4,12 +4,18 @@ import { Link, Element } from 'react-scroll';
 export default function About() {
     let [profileImage,setprofileImage]=useState({});
     async function getprofilio(){
-      let profile = await axios.get('https://raw.githubusercontent.com/rawdamohamed2/my-Portfolio-data/refs/heads/main/profile.json')
-      setprofileImage(profile.data[0]);
+      try {
+          let profile = await axios.get('https://raw.githubusercontent.com/rawdamohamed2/my-Portfolio-data/refs/heads/main/profile.json')
+          setprofileImage(profile.data[0]);
+      }
+      catch (error) {
+          console.log(error);
+      }
     }
     useEffect(()=>{
       getprofilio();
     },[])
+
   return (
     <Element name="about" className="pt-9 pb-5 bg-SecondbgColor flex items-center">
         <div className="container h-full mx-auto">
@@ -35,7 +41,7 @@ export default function About() {
                                 </ul>
 
                                 <ul className="col-span-1 lg:text-start text-center">
-                                    <li className="fontdisplay py-2 md:text-lg text-md">Job Title: <span className="text-secondfontColor">Frontend Developer</span></li>
+                                    <li className="fontdisplay py-2 md:text-lg text-md">Job Title: <span className="text-secondfontColor">Web Developer</span></li>
                                     <li className="fontdisplay py-2 md:text-lg text-md">Location: <span className="text-secondfontColor">Alex, Eygpt</span></li>       
                                 </ul>
 
