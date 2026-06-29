@@ -65,7 +65,7 @@ git clone https://github.com/rawdamohamed2/portfolio-web
 Go to the project folder
 
 ```bash
-cd your-repository
+cd portfolio-web
 ```
 
 Install dependencies
