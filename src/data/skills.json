@@ -1,0 +1,68 @@
+[
+    {
+        "title": "HTML",
+        "percentage": "90",
+        "icon": "fa-brands fa-html5"
+    },
+    {
+        "title": "CSS",
+        "percentage": "90",
+        "icon": "fa-brands fa-css"
+    },
+    {
+        "title": "JavaScript",
+        "percentage": "80",
+        "icon": "fa-brands fa-square-js"
+    },
+    {
+        "title": "React Js",
+        "percentage": "70",
+        "icon": "fa-brands fa-react"
+    },
+    {
+        "title": "Tailwind CSS",
+        "percentage": "80",
+        "icon": "https://res.cloudinary.com/dw956xm88/image/upload/v1755121430/tailwindcss_syvfrw.png"
+    }, 
+    {
+        "title": "Bootstrap",
+        "percentage": "80",
+        "icon": "fa-brands fa-bootstrap"
+    },
+    {
+        "title": "TypeScript",
+        "percentage": "80",
+        "icon": "https://res.cloudinary.com/dw956xm88/image/upload/v1755121430/typescript_jxbbjz.png"
+    },
+    {
+        "title": "Rest Api",
+        "percentage": "90",
+        "icon": "https://res.cloudinary.com/dw956xm88/image/upload/v1755452039/icons8-rest-api-60_yymyk9.png"
+    },
+    {
+        "title": "jQuery",
+        "percentage": "90",
+        "icon": "https://res.cloudinary.com/dw956xm88/image/upload/v1755121430/jquery_gjw3jx.png"
+    },
+    {
+        "title": "Redux",
+        "percentage": "80",
+        "icon": "https://res.cloudinary.com/dw956xm88/image/upload/v1758139223/icons8-redux-64_bxvow1.png"
+    },
+    {
+        "title": "Sass",
+        "percentage": "90",
+        "icon": "https://res.cloudinary.com/dw956xm88/image/upload/v1758139230/icons8-sass-64_ialu0i.png"
+    },
+    {
+        "title": "Supabase",
+        "percentage": "90",
+        "icon": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1773660335/icons8-supabase-60_1_s4v2db.png"
+    },
+    {
+        "title": "Shadcn ui",
+        "percentage": "90",
+        "icon": " https://res.cloudinary.com/dlbgzpo7s/image/upload/v1773660998/shadcn-ui_n2wmxi.svg"
+    } 
+
+]

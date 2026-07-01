@@ -1,0 +1,42 @@
+[
+  {
+        "title": "PHP",
+        "percentage": "90",
+        "icon": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1773659280/icons8-php-64_iqujrv.png"
+    },
+    {
+        "title": "NodeJs",
+        "percentage": "90",
+        "icon": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1773659363/icons8-nodejs-60_xkgiba.png"
+    },
+    {
+        "title": "Mongodb",
+        "percentage": "90",
+        "icon": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1773659685/icons8-mongo-db-60_fpvpm5.png"
+    },
+    {
+        "title": "MySQL",
+        "percentage": "90",
+        "icon": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1773660037/icons8-mysql-60_zsgzsr.png"
+    },
+    {
+        "title": "Next JS",
+        "percentage": "90",
+        "icon": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1773660037/icons8-nextjs-60_j0r8hp.png"
+    },
+    {
+        "title": "Express JS",
+        "percentage": "90",
+        "icon": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1773660335/icons8-express-js-60_bxtxxq.png"
+    },
+    {
+        "title": "ASP .NET",
+        "percentage": "90",
+        "icon": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1773660336/icons8-asp-60_rxxcih.png"
+    },
+    {
+        "title": "C#",
+        "percentage": "90",
+        "icon": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1773660338/icons8-c-sharp-logo-60_fcdtao.png"
+    }
+]

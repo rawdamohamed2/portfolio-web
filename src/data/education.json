@@ -1,0 +1,45 @@
+[
+  {
+    "position": "Frontend Developer",
+    "description": "Building a scalable educational platform and integrating AI-powered apparel customization using React and Next.js.",
+    "startDate": "Apr 2026",
+    "endDate": "Present",
+    "company": "Tayel AI Labs"
+  },
+  {
+    "position": "Frontend Developer Intern",
+    "description": "Developed high-performance React & Next.js applications, translated Figma designs into responsive interfaces, and integrated REST APIs within an Agile team.",
+    "startDate": "Oct 2025",
+    "endDate": "Mar 2026",
+    "company": "Web Masters"
+  },
+  {
+    "position": "Frontend Developer Intern",
+    "description": "Built mobile-first applications, created reusable UI components, and collaborated using Git & GitHub workflows.",
+    "startDate": "Jul 2025",
+    "endDate": "Aug 2025",
+    "company": "Code Sentinel"
+  },
+  {
+    "position": "Full Stack PHP Intern",
+    "description": "Developed CRUD applications and RESTful APIs using PHP and MySQL with secure server-side validation.",
+    "startDate": "Aug 2025",
+    "endDate": "Aug 2025",
+    "company": "ITI"
+  },
+  {
+    "position": "Web Design & Freelancing Intern",
+    "description": "Designed responsive landing pages and completed client projects while learning freelancing fundamentals.",
+    "startDate": "May 2025",
+    "endDate": "Jul 2025",
+    "company": "NTI – Ministry of Communications"
+  },
+  {
+    "position": "Bachelor of Computer Science",
+    "description": "Faculty of Science, Alexandria University.",
+    "startDate": "2022",
+    "endDate": "2026",
+    "company": "Alexandria University",
+    "gpa": "3.73 / 4.0"
+  }
+]

@@ -1,0 +1,47 @@
+[
+{
+    "title": "Git",
+    "percentage": "90",
+    "icon": "https://res.cloudinary.com/dw956xm88/image/upload/v1755452895/icons8-git-60_qotip7.png"
+},
+{
+    "title": "Netlify",
+    "percentage": "70",
+    "icon": "https://res.cloudinary.com/dw956xm88/image/upload/v1755452894/icons8-netlify-60_bvmvhm.png"
+},
+{
+    "title": "GitHub",
+    "percentage": "90",
+    "icon": "https://res.cloudinary.com/dw956xm88/image/upload/v1755452895/icons8-github-60_bm6lnw.png"
+},
+{
+    "title": "Vite",
+    "percentage": "90",
+    "icon": "https://res.cloudinary.com/dw956xm88/image/upload/v1755452894/icons8-vite-60_lzlswk.png"
+},
+{
+    "title": "Npm",
+    "percentage": "90",
+    "icon": "https://res.cloudinary.com/dw956xm88/image/upload/v1755452894/icons8-npm-60_mldaqt.png"
+},
+{
+    "title": "VS Code",
+    "percentage": "90",
+    "icon": "https://res.cloudinary.com/dw956xm88/image/upload/v1755452895/icons8-vs-code-60_ghfoqc.png"
+},
+{
+    "title": "Figma",
+    "percentage": "90",
+    "icon": "https://res.cloudinary.com/dw956xm88/image/upload/v1755452895/icons8-figma-60_dexrgz.png"
+},
+{
+    "title": "Postman",
+    "percentage": "90",
+    "icon": "https://res.cloudinary.com/dw956xm88/image/upload/v1755453443/icons8-postman-api-60_aqrw4n.png"
+},
+    {
+        "title": "Vercel",
+        "percentage": "90",
+        "icon": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1773660036/icons8-vercel-60_xlwngt.png"
+    }
+]

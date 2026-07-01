@@ -4,19 +4,62 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+  Theme variables.
+  :root  = light mode values (the default when the .dark class is absent)
+  .dark  = dark mode values (matches the site's original look exactly)
+  App.jsx toggles the .dark class on <html> based on useThemeStore.
+*/
+:root {
+    --main-bg-color: #f4f4f4;
+    --bg-color: #FFFFFF;
+    --m-color: #FFFFFF;
+    --second-bg-color: #e3e8ed;
+    --circle-color: #dcdcdc;
+    --effect-color: #0494ac;
+    --font-color: #111417;
+    --second-font-color: #697078;
+    --nav-color: #dddddd;
+    --hover-btn: #067A8F;
+    --border-color: rgba(0, 0, 0, 0.08);
+    --nav-scrolled-bg: #ffffffc1;
+    --button-hover: #e3e3e3;
+    --button-bg: #a6a6a6;
+    --button-focus: #1c4d4e;
+}
+
+.dark {
+    --main-bg-color: #1212123b;
+    --bg-color: #1e1e1e;
+    --m-color: #121212;
+    --second-bg-color: #1e1e1e3b;
+    --circle-color: #1B1b1b;
+    --effect-color: #00FFF7;
+    --font-color: #FFFFFF;
+    --second-font-color: #B3B3B3;
+    --nav-color: #1B1b1b;
+    --hover-btn: #01e2da;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --nav-scrolled-bg: #1b1b1bc1;
+    --button-hover: #1e1e1e;
+    --button-bg: rgba(227, 227, 227, 0);
+    --button-focus: #00FFF7;
+}
+
 body{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     font-family: "Open Sans", sans-serif;
-    background-color: #0D0D0D;
-    color: #FFFFFF;
+    background-color: var(--main-bg-color);
+    color: var(--font-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 .logoFont{
     font-family: "Delius", cursive;
 }
 .span{
-    text-shadow: 0 0 5px #00d9ff, 0 0 15px #00FFF7;
+    text-shadow: 0 0 5px var(--effect-color), 0 0 15px var(--effect-color);
 }
 .buttonLight{
     background-color: transparent;
@@ -26,7 +69,7 @@ body{
     transition: all 0.2s;
 }
 .buttonLight:hover{
-    background-color: var(--secondBackground-color);
+    background-color: var(--second-bg-color);
     color: var(--font-color);
     border: 1px solid var(--effect-color);
     box-shadow: 0px 0px 7px var(--effect-color);
@@ -36,9 +79,10 @@ body{
 }
 .container{
     width: 85%;
+    margin-inline:auto;
 }
 .active {
-  transform: translateX(0) !important;
+    transform: translateX(0) !important;
 }
 ul li{
     font-size: 1.1em;
@@ -68,18 +112,31 @@ ul li{
     transition: all 0.3s;
 }
 .featurelink:hover{
-    text-shadow: 0 0 4px #00FFF7;
+    text-shadow: 0 0 4px var(--effect-color);
 }
 .active {
-    border-bottom: #00d9ff 1px solid;
-    text-shadow:0 0 10px #ffffff;
-    color: #00d9ff;
+    border-bottom: var(--effect-color) 1px solid;
+    text-shadow: 0 0 10px var(--font-color);
+    color: var(--effect-color);
 }
 .navbar-scrolled{
-    background-color: #1b1b1bc1;
+    background-color: var(--nav-scrolled-bg);
     transition: all 0.3s;
 }
 .navbar-default{
     background-color: transparent;
     transition: all 0.3s;
+}
+.LinkBtn{
+    @apply border border-fontColor text-[1rem] text-effectColor p-2 rounded-lg hover:border-effectColor hover:text-fontColor hover:shadow-[0px_0px_12px_#01cabc]
+}
+/* Accessibility: a visible, high-contrast focus ring for keyboard users
+   on any element that doesn't already define its own focus style. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 2px solid var(--effect-color);
+    outline-offset: 2px;
 }
