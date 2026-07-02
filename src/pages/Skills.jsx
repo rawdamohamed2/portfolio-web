@@ -2,7 +2,7 @@ import { Element } from "react-scroll";
 import skills from "@/data/skills.json";
 import tools from "@/data/tools.json";
 import backendSkills from "@/data/backendSkills.json";
-import CategoryCard from "../components/widgets/CategoryCard.jsx";
+import CategoryCard from "@/Components/widgets/CategoryCard.jsx";
 
 export default function Skills() {
   const skillCategories = [

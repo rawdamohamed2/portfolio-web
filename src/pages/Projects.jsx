@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { Element } from "react-scroll";
-import ProjectCard from "@/components/widgets/ProjectCard.jsx";
+import ProjectCard from "@/Components/widgets/ProjectCard.jsx";
 import projects from "@/data/projects.json";
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("all");

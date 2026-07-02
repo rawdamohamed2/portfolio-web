@@ -1,6 +1,6 @@
 import React from "react";
 import { Element } from "react-scroll";
-import ImageCard from "@/components/widgets/ImageCard.jsx";
+import ImageCard from "@/Components/widgets/ImageCard.jsx";
 import profileData from "@/data/profile.json";
 
 const AboutMe = () => {

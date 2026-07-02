@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import Navbar from "@/components/common/Navbar.jsx";
+import Navbar from "@/Components/common/Navbar.jsx";
 import Projects from "@/pages/Projects.jsx";
 import Skills from "@/pages/Skills.jsx";
 import Contact from "@/pages/Contact.jsx";
 import Home from "@/pages/Home.jsx";
-import AnimatedBg from "@/components/AnimatedBg/AnimatedBg.jsx";
-import Footer from "@/components/common/Footer.jsx";
+import AnimatedBg from "@/Components/AnimatedBg/AnimatedBg.jsx";
+import Footer from "@/Components/common/Footer.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import AboutMe from "@/pages/AboutMe.jsx";
