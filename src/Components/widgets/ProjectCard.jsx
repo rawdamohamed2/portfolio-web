@@ -15,7 +15,7 @@ export default function ProjectCard({ project }) {
     }
     return () => tiltRef.current?.vanillaTilt?.destroy();
   }, []);
-
+  console.log(project?.demo);
   return (
     <div
       ref={tiltRef}
@@ -44,7 +44,7 @@ export default function ProjectCard({ project }) {
                 href={project.linkDemo}
                 target="_blank"
                 rel="noreferrer"
-                className="btn bg-hoverBtn block text-fontColor py-2 rounded-lg w-full duration-300 transition-all hover:bg-cricleColor hover:text-effectColor hover:shadow-[0px_0px_12px_#00FFF7]"
+                className={`${project?.demo === false ? "bg-secondfontColor hover:bg-secondfontColor" : "bg-hoverBtn hover:bg-cricleColor hover:text-effectColor hover:shadow-[0px_0px_12px_#00FFF7]"} btn  block text-fontColor py-2 rounded-lg w-full duration-300 transition-all  `}
               >
                 Live Demo
               </a>

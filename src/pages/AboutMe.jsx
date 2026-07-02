@@ -25,33 +25,32 @@ const AboutMe = () => {
               <div className="content md:px-3 px-0 md:py-3 py-7 ">
                 <p className="text-xl lg:text-start text-center ">
                   I'm a Frontend Developer and Computer Science graduate from
-                  Alexandria University with hands-on experience building
-                  modern, responsive, and scalable web applications. I
-                  specialize in React.js, Next.js, TypeScript, and Tailwind CSS,
-                  with practical experience gained through internships,
-                  professional work, and real-world projects.
+                  Alexandria University, passionate about building modern,
+                  responsive, and scalable web applications. I specialize in
+                  React.js, Next.js, TypeScript, and Tailwind CSS, with hands-on
+                  experience gained through internships, professional work, and
+                  real-world projects.
                 </p>
                 <p className=" text-xl lg:text-start text-center py-3 ">
-                  I enjoy transforming ideas and Figma designs into clean,
-                  high-performance user interfaces while writing maintainable,
-                  reusable code and following modern development best practices.
-                  I have experience integrating REST APIs, optimizing
-                  application performance, and building solutions that
-                  prioritize both functionality and user experience.
+                  I enjoy turning ideas and Figma designs into clean,
+                  high-performance user interfaces, integrating REST APIs, and
+                  writing maintainable, reusable code. I'm a fast learner who
+                  values continuous improvement, teamwork, and creating digital
+                  products that deliver meaningful user experiences.
                 </p>
-                <p className=" text-xl lg:text-start text-center py-3 ">
-                  Throughout my journey, I've developed E-Commerce, E-Learning,
-                  AI-powered platforms, and Dashboard applications, using modern
-                  technologies such as Redux, Zustand, React Hook Form,
-                  Supabase, MongoDB, and JWT.
-                </p>
-                <p className=" text-xl lg:text-start text-center py-3 relative after:content-[''] after:block after:w-full after:m-auto after:h-[0.2px] after:bg-gray-500 after:rounded after:mt-5">
-                  I'm passionate about continuous learning, solving real-world
-                  problems, and collaborating with teams to build impactful
-                  digital products. My goal is to grow as a Frontend Engineer
-                  while delivering high-quality applications that create
-                  meaningful value.
-                </p>
+                {/*<p className=" text-xl lg:text-start text-center py-3 ">*/}
+                {/*  Throughout my journey, I've developed E-Commerce, E-Learning,*/}
+                {/*  AI-powered platforms, and Dashboard applications, using modern*/}
+                {/*  technologies such as Redux, Zustand, React Hook Form,*/}
+                {/*  Supabase, MongoDB, and JWT.*/}
+                {/*</p>*/}
+                {/*<p className=" text-xl lg:text-start text-center py-3 relative after:content-[''] after:block after:w-full after:m-auto after:h-[0.2px] after:bg-gray-500 after:rounded after:mt-5">*/}
+                {/*  I'm passionate about continuous learning, solving real-world*/}
+                {/*  problems, and collaborating with teams to build impactful*/}
+                {/*  digital products. My goal is to grow as a Frontend Engineer*/}
+                {/*  while delivering high-quality applications that create*/}
+                {/*  meaningful value.*/}
+                {/*</p>*/}
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2 py-7">
                   <ul className="col-span-1 lg:text-start text-center">
@@ -85,7 +84,7 @@ const AboutMe = () => {
                     </li>
                   </ul>
 
-                  <div className=" flex flex-row justify-center gap-4 py-3 px-2 lg:text-start text-center lg:mt-0 md:mt-2 mt-0 ">
+                  <div className=" flex sm:flex-row flex-col justify-center gap-4 py-3 px-2 lg:text-start text-center lg:mt-0 md:mt-2 mt-0 ">
                     <a
                       href="https://www.linkedin.com/in/rawda-mohamed-367a77370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                       className="LinkBtn"

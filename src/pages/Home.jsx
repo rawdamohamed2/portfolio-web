@@ -29,7 +29,7 @@ const Home = () => {
   return (
     <Element
       name="home"
-      className="relative overflow-hidden min-h-dvh bg-MainbgColor w-full flex items-center justify-center"
+      className="relative xs:mt-0 mt-20 overflow-hidden min-h-dvh bg-MainbgColor w-full flex items-center justify-center"
     >
       <div className="hidden md:block overflow-hidden md:h-[600px] h-[320px] md:w-[600px] w-[320px] bg-cricleColor absolute end-[-90px] bottom-[-90px] rounded-[50%] opacity-25 rotate-35 z-0 pointer-events-none"></div>
       <div className="overflow-hidden md:h-[550px] h-[300px] md:w-[550px] w-[300px] bg-cricleColor absolute start-[-95px] top-[-60px] rounded-[50%] opacity-25 rotate-35 z-0 pointer-events-none"></div>
@@ -54,7 +54,7 @@ const Home = () => {
             Building modern, scalable, and user-friendly web applications with
             clean code and great user experiences
           </h3>
-          <div className="buttons mt-8 flex flex-row gap-4 justify-center items-center">
+          <div className="buttons mt-8 flex sm:flex-row flex-col gap-4 justify-center items-center">
             <a
               href="/cv/Rawda_Mohamed_Frontend_Developer_CV.pdf"
               download="Rawda_Mohamed_Frontend_Developer_CV.pdf"

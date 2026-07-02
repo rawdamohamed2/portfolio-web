@@ -5,7 +5,7 @@
     "description": "A responsive game website. It fetches and displays game data from an API in styled cards with modals for details. It also allows users to filter games by category and It allows users to read detailed reviews. built with HTML, CSS, Bootstrap, and JavaScript for API integration.",
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755119495/game_nhhoyj.png",
     "linkDemo": "https://rawdamohamed2.github.io/Game-Reviews/",
-    "GitHub":"https://github.com/rawdamohamed2/Game-Reviews" ,
+    "GitHub": "https://github.com/rawdamohamed2/Game-Reviews",
     "Vanilla": true
   },
   {
@@ -14,16 +14,16 @@
     "description": "A responsive weather website that fetches real-time weather data using an external API. It displays current temperature, weather conditions, and city-specific information with a search option for any country, built with HTML, CSS, Bootstrap, and JavaScript for API integration.",
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755119505/weather_v8does.png",
     "linkDemo": "https://rawdamohamed2.github.io/weather-Web/",
-    "GitHub":"https://github.com/rawdamohamed2/weather-Web" ,
+    "GitHub": "https://github.com/rawdamohamed2/weather-Web",
     "Vanilla": true
   },
   {
     "id": 3,
     "title": "Fokir Portfolio",
-    "description":"A personal portfolio website inspired by the Fokir template. It showcases projects, skills, and contact details with responsive design for different screen sizes with smooth scrolling, interactive UI elements, and mobile-friendly design, built with HTML, CSS, Bootstrap, and JavaScript.",
+    "description": "A personal portfolio website inspired by the Fokir template. It showcases projects, skills, and contact details with responsive design for different screen sizes with smooth scrolling, interactive UI elements, and mobile-friendly design, built with HTML, CSS, Bootstrap, and JavaScript.",
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755119477/fokir_i3xlaq.png",
     "linkDemo": "https://rawdamohamed2.github.io/Fokir-Web/",
-    "GitHub":"https://github.com/rawdamohamed2/Fokir-Web" ,
+    "GitHub": "https://github.com/rawdamohamed2/Fokir-Web",
     "Vanilla": true
   },
   {
@@ -32,7 +32,7 @@
     "description": "A responsive CRUD system website that allows users to manage product records. It offers a complete CRUD (Create, Read, Update, Delete) functionality where users can add, edit, and remove product details with persistent storage using localStorage, built with HTML, Bootstrap, and JavaScript.",
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755119455/curd_s3drlq.png",
     "linkDemo": "https://rawdamohamed2.github.io/Product-CRUD/",
-    "GitHub":"https://github.com/rawdamohamed2/Product-CRUD" ,
+    "GitHub": "https://github.com/rawdamohamed2/Product-CRUD",
     "Vanilla": true
   },
   {
@@ -41,7 +41,7 @@
     "description": "A responsive gallery website that allows users to browse and filter images by category. It provides interactive features including modal previews, light and dark modes, and a favorites option with data persistence using localStorage, built with HTML, CSS, Bootstrap, and JavaScript.",
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755119485/gallery_lzdqpg.png",
     "linkDemo": "https://rawdamohamed2.github.io/CodeAlpha_ImageGallery/",
-    "GitHub": "https://github.com/rawdamohamed2/CodeAlpha_ImageGallery" ,
+    "GitHub": "https://github.com/rawdamohamed2/CodeAlpha_ImageGallery",
     "Vanilla": true
   },
   {
@@ -50,7 +50,7 @@
     "description": "My first React project is a A responsive portfolio website that showcases personal projects and skills. It provides smooth scrolling, active link highlighting, interactive animations, and a functional contact form with validation, built using React and Tailwind CSS.",
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755119500/Portfolio_m2oik8.png",
     "linkDemo": "https://rawdamohamed.netlify.app/",
-    "GitHub": "https://github.com/rawdamohamed2/code_sentinel_PortfolioWebsite" 
+    "GitHub": "https://github.com/rawdamohamed2/code_sentinel_PortfolioWebsite"
   },
   {
     "id": 7,
@@ -59,14 +59,14 @@
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755119447/Calculator_fmwnfx.png",
     "linkDemo": "https://rawdamohamed2.github.io/CodeAlpha_Calculator/",
     "GitHub": "https://github.com/rawdamohamed2/CodeAlpha_Calculator"
-  }, 
+  },
   {
     "id": 8,
     "title": "TickIt",
     "description": "A responsive to-do list website that allows users to manage daily tasks. It provides a dynamic task system that enables users to create, update, delete, and mark tasks as complete with filtering and persistence using React, Tailwind CSS, and localStorage.",
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755372551/Todolist_e7kqss.png",
     "linkDemo": "https://todolistrm.netlify.app/",
-    "GitHub": "https://github.com/rawdamohamed2/code_sentinel_TodoListApp" 
+    "GitHub": "https://github.com/rawdamohamed2/code_sentinel_TodoListApp"
   },
   {
     "id": 9,
@@ -74,24 +74,24 @@
     "description": "A responsive product card app that displays product details in a simple card view. It provides a dynamic layout that shows the product name, image, price, and description, with a clean design, built with React and Tailwind CSS.",
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755372617/prouctcard_swuibz.png",
     "linkDemo": "https://projectcardrm.netlify.app/",
-    "GitHub": "https://github.com/rawdamohamed2/code_sentinel_ProductCard" 
-  },  
+    "GitHub": "https://github.com/rawdamohamed2/code_sentinel_ProductCard"
+  },
   {
     "id": 10,
     "title": "movie App",
     "description": "A responsive movie and TV browsing app with authentication. It includes login/register using JWT with Joi validation, search across movies and TV, filtering, sorting, and actor profiles with IMDb links. Built with React, Vite, Tailwind, Context API, Axios, React Router, and TMDb API.",
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1758138474/cinehub-movieapp.netlify.app__rs3whd.png",
     "linkDemo": "https://cinehub-movieapp.netlify.app/",
-    "GitHub":"https://github.com/rawdamohamed2/movieApp" ,
+    "GitHub": "https://github.com/rawdamohamed2/movieApp",
     "Vanilla": false
-  }, 
+  },
   {
     "id": 11,
     "title": "Clipboard Landing Page",
     "description": "A responsive landing page for the Clipboard app built with React and Tailwind CSS. It highlights product features, testimonials, and call-to-action sections with a clean design and mobile-first layout.",
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1758138505/clipboard-landing1.netlify.app__h39fsc.png",
     "linkDemo": "https://clipboard-landing1.netlify.app/",
-    "GitHub":"https://github.com/rawdamohamed2/clipboard-landing-page" ,
+    "GitHub": "https://github.com/rawdamohamed2/clipboard-landing-page",
     "Vanilla": false
   },
   {
@@ -110,15 +110,17 @@
     "image": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1773658166/192.168.56.1_3000__cnhi0k.png",
     "linkDemo": "https://github.com/Basta97/E-COMMERCE-Web-Master",
     "GitHub": "https://github.com/Basta97/E-COMMERCE-Web-Master",
-    "Next": true
-},
+    "Next": true,
+    "demo": false
+  },
   {
-  "id": 14,
-  "title": "E-Learning Platform",
-  "description": "An e-learning web application with admin dashboard, home page, lessons management, and online exams. Allows admins to create lessons and manage course content with a user-friendly interface.",
-  "image": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1773658484/localhost_5174__bwq9eu.png",
-  "linkDemo": "https://github.com/hussain-ELshepeny/E-learning",
-  "GitHub": "https://github.com/hussain-ELshepeny/E-learning",
-  "Vanilla": false
-}
+    "id": 14,
+    "title": "E-Learning Platform",
+    "description": "An e-learning web application with admin dashboard, home page, lessons management, and online exams. Allows admins to create lessons and manage course content with a user-friendly interface.",
+    "image": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1773658484/localhost_5174__bwq9eu.png",
+    "linkDemo": "https://github.com/hussain-ELshepeny/E-learning",
+    "GitHub": "https://github.com/hussain-ELshepeny/E-learning",
+    "Vanilla": false,
+    "demo": false
+  }
 ]

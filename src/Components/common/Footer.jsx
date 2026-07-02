@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="container py-5 mx-auto">
+    <footer className=" py-5 bg-MainbgColor">
       <div
-        className="grid  grid-cols-1 gap-4"
+        className="container grid grid-cols-1 gap-4"
         data-aos="zoom-in"
         data-aos-delay="200"
       >

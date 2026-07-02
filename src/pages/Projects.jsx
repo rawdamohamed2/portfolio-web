@@ -26,7 +26,7 @@ const Projects = () => {
 
   return (
     <Element name="projects">
-      <div className="min-h-dvh py-16 bg-SecondbgColor overflow-hidden">
+      <div className="min-h-dvh py-16  bg-SecondbgColor overflow-hidden">
         <div className="container mx-auto overflow-hidden">
           {/* Header Section */}
           <div
@@ -77,7 +77,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-9 md:gap-x-5 gap-x-9 overflow-hidden py-10 md:px-2 px-0">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-9 md:gap-x-5 gap-x-9 overflow-hidden md:px-10 px-0 py-10">
             {filteredProjects.length > 0 ? (
               filteredProjects.map((projectItem, index) => (
                 <ProjectCard key={index} project={projectItem} />

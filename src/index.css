@@ -12,7 +12,7 @@
 */
 :root {
     --main-bg-color: #f4f4f4;
-    --bg-color: #FFFFFF;
+    --bg-color: #f4f4f4;
     --m-color: #FFFFFF;
     --second-bg-color: #e3e8ed;
     --circle-color: #dcdcdc;
@@ -33,7 +33,7 @@
     --bg-color: #1e1e1e;
     --m-color: #121212;
     --second-bg-color: #1e1e1e3b;
-    --circle-color: #1B1b1b;
+    --circle-color: rgb(43, 43, 43);
     --effect-color: #00FFF7;
     --font-color: #FFFFFF;
     --second-font-color: #B3B3B3;
@@ -51,7 +51,7 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: "Open Sans", sans-serif;
-    background-color: var(--main-bg-color);
+    background-color: var(--bg-color);
     color: var(--font-color);
     transition: background-color 0.3s ease, color 0.3s ease;
 }

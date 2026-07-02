@@ -33,12 +33,12 @@ const Experience = () => {
             {experience.map((item, index) => (
               <div
                 key={index}
-                className={`relative  flex items-center justify-between w-full mb-8  ${index % 2 === 0 ? "md:flex-row-reverse" : "flex-row"}`}
+                className={`relative md:left-0 left-7 flex items-center justify-between w-full mb-8  ${index % 2 === 0 ? "md:flex-row-reverse" : "flex-row"}`}
                 data-aos="fade-up"
                 data-aos-delay="500"
               >
                 <div className="hidden md:block w-[45%]"></div>
-                <div className="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-5 h-5 bg-hoverBtn rounded-full border-4 border-white z-10 shadow-sm"></div>
+                <div className="absolute -left-2 md:left-1/2 transform -translate-x-1/2 w-5 h-5 bg-hoverBtn rounded-full border-4 border-white z-10 shadow-sm"></div>
                 <div className=" p-4 w-full md:w-[45%] bg-cricleColor hover:bg-transparent hover:shadow-[0px_0px_15px_#00FFF7] transform hover:scale-[1.06] rounded-xl transition-all duration-500">
                   <h5 className="text-xl">{item.position}</h5>
                   <p className="font-light md:mt-4 mt-1 md:mb-1 mb-0 text-[1.03rem]">

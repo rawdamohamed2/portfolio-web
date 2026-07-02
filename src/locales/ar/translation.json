@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "about": "عني",
+    "education": "التعليم",
+    "projects": "المشاريع",
+    "skills": "المهارات",
+    "contact": "تواصل",
+    "openMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة"
+  },
+  "theme": {
+    "switchToLight": "التحويل للوضع الفاتح",
+    "switchToDark": "التحويل للوضع الداكن"
+  },
+  "language": {
+    "switchTo": "English",
+    "label": "تغيير اللغة"
+  },
+  "social": {
+    "github": "حساب GitHub",
+    "linkedin": "حساب LinkedIn"
+  }
+}
