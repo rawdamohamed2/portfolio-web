@@ -1,67 +1,123 @@
-import React from "react";
-import { Element } from "react-scroll";
+import React, { useState } from "react";
 import experience from "@/data/education.json";
+
+const toComponentName = (str = "") =>
+  str
+    .replace(/[^a-zA-Z0-9 ]/g, "")
+    .split(" ")
+    .filter(Boolean)
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join("") || "Experience";
+
 const Experience = () => {
-  if (!experience) {
-    return (
-      <div className=" w-full min-h-dvh text-6xl font-bold text-center">
-        There is no experience.
-      </div>
-    );
-  }
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const items = [...experience];
+  const active = items[activeIndex];
+
   return (
-    <Element name="education" className=" py-12 px-6 overflow-hidden">
-      <div className="container">
-        <div
-          className="headercontant pb-4"
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <h1
-            className="py-2 md:text-[3.3rem] text-4xl font-bold text-center relative after:content-['']
+    <div className="min-h-dvh pt-20 container overflow-hidden">
+      <div
+        className="headercontant pb-4"
+        data-aos="zoom-in"
+        data-aos-delay="500"
+      >
+        <h1
+          className="py-3 md:text-[3.3rem] text-4xl font-bold text-center relative after:content-['']
                         after:block lg:after:w-[27%] md:after:w-[40%] sm:after:w-[40%] after:w-full after:mx-auto after:h-[0.2px]
                         after:bg-hoverBtn md:after:mt-6 after:mt-4"
-          >
-            <span className="text-effectColor">My</span> Experience
-          </h1>
+        >
+          <span className="text-effectColor">My</span> Experience
+        </h1>
+      </div>
+
+      <div className="max-w-4xl mx-auto rounded-xl border border-fontColor bg-borderColor backdrop-blur-sm overflow-hidden mt-4">
+        <div className="flex items-center gap-2 px-4 py-2.5 bg-black/20 border-b border-fontColor">
+          <span className="w-2.5 h-2.5 rounded-full bg-red-400/70" />
+          <span className="w-2.5 h-2.5 rounded-full bg-yellow-400/70" />
+          <span className="w-2.5 h-2.5 rounded-full bg-emerald-400/70" />
+          <span className="ms-3 text-xs text-secondfontColor/60 font-mono">
+            ⚛ Components
+          </span>
         </div>
 
-        <div className="relative max-w-5xl mx-auto">
-          <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-effectColor rounded-full"></div>
+        <div className="flex flex-col md:flex-row">
+          <div className="md:w-[42%] border-b md:border-b-0 md:border-e border-fontColor px-4 py-5 font-mono text-sm">
+            <p className="text-secondfontColor/50">
+              &lt;<span className="text-CodeColor">Career</span>&gt;
+            </p>
 
-          <div className="space-y-12">
-            {experience.map((item, index) => (
-              <div
-                key={index}
-                className={`relative md:left-0 left-7 flex items-center justify-between w-full mb-8  ${index % 2 === 0 ? "md:flex-row-reverse" : "flex-row"}`}
-                data-aos="fade-up"
-                data-aos-delay="500"
-              >
-                <div className="hidden md:block w-[45%]"></div>
-                <div className="absolute -left-2 md:left-1/2 transform -translate-x-1/2 w-5 h-5 bg-hoverBtn rounded-full border-4 border-white z-10 shadow-sm"></div>
-                <div className=" p-4 w-full md:w-[45%] bg-cricleColor hover:bg-transparent hover:shadow-[0px_0px_15px_#00FFF7] transform hover:scale-[1.06] rounded-xl transition-all duration-500">
-                  <h5 className="text-xl">{item.position}</h5>
-                  <p className="font-light md:mt-4 mt-1 md:mb-1 mb-0 text-[1.03rem]">
-                    {item.description}
-                  </p>
-                  <p className="font-light mb:md-1 mb-0 text-[1.03rem]">
-                    {item.company} <span className="text-effectColor">|</span> [{" "}
-                    {item.startDate} - {item.endDate} ]
-                  </p>
-                  {item.gpa ? (
-                    <p className="font-light mb:md-1 mb-0 text-[1.03rem]">
-                      GPA: <span className=""> 3.73 </span>
-                    </p>
-                  ) : (
-                    ""
-                  )}
-                </div>
-              </div>
-            ))}
+            <div className="ms-3 ps-3 border-s border-fontColor my-1">
+              {items.map((item, index) => {
+                const isActive = index === activeIndex;
+                return (
+                  <button
+                    key={index}
+                    onClick={() => setActiveIndex(index)}
+                    className={`relative w-full text-start py-1.5 ps-3 rounded-md transition-colors duration-300 ${
+                      isActive
+                        ? "bg-hoverBtn/10 text-effectColor"
+                        : "text-CodeColor hover:text-effectColor"
+                    }`}
+                  >
+                    <span className="absolute -start-3 top-1/2 -translate-y-1/2 w-3 h-px bg-hoverBtn/20" />
+                    &lt;{toComponentName(item.position)} /&gt;
+                  </button>
+                );
+              })}
+            </div>
+
+            <p className="text-secondfontColor/50">
+              &lt;/<span className="text-CodeColor">Career</span>&gt;
+            </p>
+          </div>
+
+          <div className="md:w-[58%] px-5 py-5">
+            <p className="text-xs uppercase tracking-widest text-secondfontColor mb-3 font-mono">
+              props
+            </p>
+
+            <div
+              key={activeIndex}
+              className="font-mono text-sm leading-8 p-4 rounded-lg bg-bgColor hover:shadow-[0px_0px_15px_#00FFF7] transition-all duration-500"
+              data-aos="fade-up"
+            >
+              <p>
+                <span className="text-secondfontColor">position</span>
+                <span className="text-secondfontColor">: </span>
+                <span className="text-SecondryFontColor">
+                  "{active.position}"
+                </span>
+              </p>
+              <p>
+                <span className="text-secondfontColor">company</span>
+                <span className="text-secondfontColor">: </span>
+                <span className="text-SecondryFontColor">
+                  "{active.company}"
+                </span>
+              </p>
+              <p>
+                <span className="text-secondfontColor">duration</span>
+                <span className="text-secondfontColor">: </span>
+                <span className="text-SecondryFontColor">
+                  "{active.startDate} — {active.endDate || "present"}"
+                </span>
+              </p>
+              {active.gpa && (
+                <p>
+                  <span className="text-secondfontColor">gpa</span>
+                  <span className="text-secondfontColor">: </span>
+                  <span className="text-sky-300">{active.gpa}</span>
+                </p>
+              )}
+              <p className="pt-2 mt-2 border-t border-hoverBtn/10 text-secondfontColor font-sans leading-relaxed">
+                {active.description}
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </Element>
+    </div>
   );
 };
 

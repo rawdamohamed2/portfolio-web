@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import ThemeToggle from "./ThemeToggle";
-import LanguageSwitcher from "./LanguageSwitcher";
+import ThemeToggle from "../common/ThemeToggle.jsx";
+import LanguageSwitcher from "../common/LanguageSwitcher.jsx";
 
 export default function Navbar() {
   const { t } = useTranslation();
@@ -43,7 +43,7 @@ export default function Navbar() {
           >
             <li>
               <Link
-                to="home"
+                to="/"
                 spy={true}
                 activeClass="active"
                 offset={-100}
@@ -73,7 +73,7 @@ export default function Navbar() {
             <hr className="md:hidden w-full bg-effectColor p-[0.3px]  my-1" />
             <li>
               <Link
-                to="education"
+                to="experience"
                 spy={true}
                 activeClass="active"
                 offset={-90}

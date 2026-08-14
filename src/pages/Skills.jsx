@@ -2,7 +2,7 @@ import { Element } from "react-scroll";
 import skills from "@/data/skills.json";
 import tools from "@/data/tools.json";
 import backendSkills from "@/data/backendSkills.json";
-import CategoryCard from "@/Components/widgets/CategoryCard.jsx";
+import CategoryCard from "@/Components/skills/CategoryCard.jsx";
 
 export default function Skills() {
   const skillCategories = [
@@ -12,34 +12,30 @@ export default function Skills() {
   ];
 
   return (
-    <Element name="skills" className="py-5 bg-MainbgColor overflow-hidden">
-      <div className="container mx-auto">
-        {/* Header Section */}
-        <div
-          className="haederProjects pb-7 text-center"
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <h1 className="py-4 md:text-[3.3rem] text-4xl font-bold relative after:content-[''] after:block lg:after:w-[20%] md:after:w-[30%] sm:after:w-[25%] after:w-[38%] after:mx-auto after:h-[0.1px] after:bg-hoverBtn after:mt-5">
-            <span className="text-effectColor">Sk</span>ills
-          </h1>
-        </div>
-
-        {/* Categories Grid */}
-        <div
-          className="grid grid-cols-1 md:grid-cols-2 md:gap-14 gap-y-10 py-4 md:px-0 px-4 mb-6"
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          {skillCategories.map((category, index) => (
-            <CategoryCard
-              key={index}
-              title={category.title}
-              items={category.data}
-            />
-          ))}
-        </div>
+    <div className="min-h-dvh pt-20 p-10 container mx-auto overflow-hidden">
+      <div
+        className="haederProjects pb-7 text-center"
+        data-aos="zoom-in"
+        data-aos-delay="500"
+      >
+        <h1 className="py-4 md:text-[3.3rem] text-4xl font-bold relative after:content-[''] after:block lg:after:w-[20%] md:after:w-[30%] sm:after:w-[25%] after:w-[38%] after:mx-auto after:h-[0.1px] after:bg-hoverBtn after:mt-5">
+          <span className="text-effectColor">Sk</span>ills
+        </h1>
       </div>
-    </Element>
+
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 md:gap-14 gap-y-10 py-4 md:px-0 px-4 mb-6"
+        data-aos="zoom-in"
+        data-aos-delay="500"
+      >
+        {skillCategories.map((category, index) => (
+          <CategoryCard
+            key={index}
+            title={category.title}
+            items={category.data}
+          />
+        ))}
+      </div>
+    </div>
   );
 }

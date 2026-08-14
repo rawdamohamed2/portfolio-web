@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Link, Element } from "react-scroll";
+import RobotScene from "@/Components/3d/RobotScene.jsx";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const fullText = "Developer";
@@ -13,12 +14,18 @@ const Home = () => {
   useEffect(() => {
     let typingTimeout;
 
-    if (!isDeleting && index <= fullText.length) {
-      typingTimeout = setTimeout(() => setIndex(index + 1), speed);
-    } else if (isDeleting && index >= 0) {
-      typingTimeout = setTimeout(() => setIndex(index - 1), deleteSpeed);
+    if (!isDeleting && index < fullText.length) {
+      typingTimeout = setTimeout(() => {
+        setIndex((prev) => prev + 1);
+      }, speed);
+    } else if (isDeleting && index > 0) {
+      typingTimeout = setTimeout(() => {
+        setIndex((prev) => prev - 1);
+      }, deleteSpeed);
     } else {
-      typingTimeout = setTimeout(() => setIsDeleting(!isDeleting), delay);
+      typingTimeout = setTimeout(() => {
+        setIsDeleting((prev) => !prev);
+      }, delay);
     }
 
     return () => clearTimeout(typingTimeout);
@@ -27,53 +34,90 @@ const Home = () => {
   const currentText = fullText.substring(0, index);
 
   return (
-    <Element
-      name="home"
-      className="relative xs:mt-0 mt-20 overflow-hidden min-h-dvh bg-MainbgColor w-full flex items-center justify-center"
-    >
-      <div className="hidden md:block overflow-hidden md:h-[600px] h-[320px] md:w-[600px] w-[320px] bg-cricleColor absolute end-[-90px] bottom-[-90px] rounded-[50%] opacity-25 rotate-35 z-0 pointer-events-none"></div>
-      <div className="overflow-hidden md:h-[550px] h-[300px] md:w-[550px] w-[300px] bg-cricleColor absolute start-[-95px] top-[-60px] rounded-[50%] opacity-25 rotate-35 z-0 pointer-events-none"></div>
+    <div className="relative min-h-dvh w-full overflow-hidden bg-MainbgColor/20 flex items-center">
+      <div className="pointer-events-none absolute -top-40 -left-40 h-[500px] w-[500px] rounded-full bg-effectColor/10 blur-[120px]" />
 
-      <div
-        className="container relative flex items-center justify-center text-center mx-auto z-10"
-        data-aos="fade-down"
-        data-aos-delay="600"
-      >
-        <div className="content">
-          <h1 className="md:text-[4rem] text-[2.6rem] font-medium leading-tight">
-            <span className="logoFont block span">Hello, I'm</span>
-            Rawda Mohamed
-          </h1>
-          <h2 className="md:text-[2.5rem] text-[2.1rem] font-medium mt-2">
-            Frontend <span className="text-effectColor">{currentText}</span>
-            <span className="font-light animate-pulse">|</span>
-          </h2>
-          {/*<h2 className="md:text-[2.5rem] text-[2.1rem] font-medium mt-2">*/}
-          {/*    React.js • Next.js • TypeScript</h2>*/}
-          <h3 className="md:text-[1.2rem] w-3/4 mx-auto text-[1rem] mt-2 text-secondfontColor">
-            Building modern, scalable, and user-friendly web applications with
-            clean code and great user experiences
-          </h3>
-          <div className="buttons mt-8 flex sm:flex-row flex-col gap-4 justify-center items-center">
-            <a
-              href="/cv/Rawda_Mohamed_Frontend_Developer_CV.pdf"
-              download="Rawda_Mohamed_Frontend_Developer_CV.pdf"
-              className="inline-block text-[1.23rem] bg-hoverBtn text-bgColor md:px-7 px-4 py-[11px] rounded-lg shadow-[1px_1px_20px_var(--hover-btn)] hover:text-hoverBtn hover:shadow-[3px_3px_35px_var(--hover-btn)] hover:bg-bgColor transition-all duration-300"
-            >
-              Download CV
-            </a>
-            <Link
-              to="projects"
-              smooth={true}
-              duration={500}
-              className="cursor-pointer border border-effectColor hover:border-transparent inline-block text-[1.23rem] text-buttonFont md:px-7 px-4 py-[11px] rounded-lg shadow-[1px_1px_20px_var(--hover-btn)] hover:text-fontColor hover:shadow-[3px_3px_35px_var(--hover-btn)] hover:bg-buttonHover transition-all duration-300"
-            >
-              Explore My Work
-            </Link>
-          </div>
+      <div className="pointer-events-none absolute -bottom-60 -right-40 h-[650px] w-[650px] rounded-full bg-cricleColor/20 blur-[120px]" />
+
+      <div className="container relative z-10 mx-auto flex w-full items-center px-5 py-20 sm:px-8 lg:px-8">
+        <div className="grid w-full grid-cols-1 items-center gap-8 lg:grid-cols-[1fr_0.9fr] lg:gap-4">
+          <section
+            className="relative z-20 flex flex-col items-center text-center lg:items-start lg:text-left"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
+            <h1 className="max-w-3xl text-[2.8rem] font-semibold leading-[1.05] tracking-tight sm:text-[3.7rem] md:text-[4.5rem] lg:text-[4.7rem]">
+              Hello, I'm
+              <span className="logoFont mt-2 block bg-gradient-to-r from-fontColor via-effectColor to-cricleColor bg-clip-text text-transparent">
+                Rawda Mohamed
+              </span>
+            </h1>
+
+            <div className="mt-5 flex min-h-[52px] items-center">
+              <h2 className="text-2xl font-medium text-secondfontColor sm:text-3xl md:text-4xl">
+                Frontend <span className="text-effectColor">{currentText}</span>
+                <span className="ml-1 animate-pulse text-effectColor">|</span>
+              </h2>
+            </div>
+
+            <p className="mt-4 max-w-xl text-base leading-7 text-secondfontColor sm:text-lg sm:leading-8">
+              I create modern, scalable and interactive web experiences with
+              clean code, thoughtful UI and smooth animations.
+            </p>
+
+            <div className="mt-7 flex flex-wrap justify-center gap-2 lg:justify-start">
+              {["React.js", "Next.js", "TypeScript", "Tailwind CSS"].map(
+                (tech) => (
+                  <span
+                    key={tech}
+                    className="rounded-full border border-effectColor/10 bg-bgColor/40 px-3.5 py-1.5 text-sm text-secondfontColor backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-effectColor/40 hover:text-effectColor"
+                  >
+                    {tech}
+                  </span>
+                ),
+              )}
+            </div>
+
+            <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row lg:justify-start">
+              <a
+                href="/cv/Rawda_Mohamed_Frontend_Developer_CV.pdf"
+                download="Rawda_Mohamed_Frontend_Developer_CV.pdf"
+                className="group relative overflow-hidden rounded-xl bg-hoverBtn px-7 py-3.5 text-base font-medium text-bgColor shadow-[0_0_30px_var(--hover-btn)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_45px_var(--hover-btn)]"
+              >
+                <span className="relative z-10">Download CV</span>
+
+                <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-500 group-hover:translate-x-full" />
+              </a>
+
+              <Link
+                to="projects"
+                smooth
+                duration={700}
+                className="cursor-pointer rounded-xl border border-effectColor/40 bg-bgColor/20 px-7 py-3.5 text-base font-medium text-buttonFont backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-effectColor hover:bg-effectColor/10 hover:text-effectColor"
+              >
+                Explore My Work
+              </Link>
+            </div>
+          </section>
+
+          <section
+            className="relative flex h-[480px] w-full items-center justify-center sm:h-[560px] lg:h-[680px]"
+            data-aos="fade-left"
+            data-aos-delay="500"
+          >
+            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[280px] w-[280px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-effectColor/20 blur-[90px] sm:h-[380px] sm:w-[380px]" />
+
+            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[330px] w-[330px] -translate-x-1/2 -translate-y-1/2 animate-[spin_20s_linear_infinite] rounded-full border border-effectColor/98 sm:h-[470px] sm:w-[470px]" />
+
+            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[250px] w-[250px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-dashed border-effectColor/20 sm:h-[360px] sm:w-[360px]" />
+
+            <div className="relative z-10 h-full w-full">
+              <RobotScene />
+            </div>
+          </section>
         </div>
       </div>
-    </Element>
+    </div>
   );
 };
 

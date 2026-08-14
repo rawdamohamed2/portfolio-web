@@ -13,14 +13,13 @@ const CategoryCard = ({ title, items }) => {
         scale: 1.02,
       });
     }
-    // Cleanup عشان الـ Memory leak
     return () => tiltRef.current?.vanillaTilt?.destroy();
   }, []);
 
   return (
     <div
       ref={tiltRef}
-      className="flex flex-col md:gap-5 gap-3 items-center justify-center h-fit border-0 w-full transform duration-500 transition-all bg-MainbgColor shadow-[0px_0px_6px_#00FFF7] rounded-2xl md:px-[60px] px-6 py-5"
+      className="flex flex-col md:gap-5 gap-3 items-center justify-center h-fit border-0 w-full transform duration-500 transition-all bg-primary/60 shadow-[0px_0px_6px_#00FFF7] rounded-2xl md:px-[60px] px-6 py-5"
     >
       <h1 className="text-3xl pb-3 pt-2 text-center text-secondfontColor">
         {title}

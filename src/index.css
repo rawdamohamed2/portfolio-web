@@ -1,34 +1,57 @@
+@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tw-animate-css";
+@import "@fontsource-variable/geist";
 
-/*
-  Theme variables.
-  :root  = light mode values (the default when the .dark class is absent)
-  .dark  = dark mode values (matches the site's original look exactly)
-  App.jsx toggles the .dark class on <html> based on useThemeStore.
-*/
-:root {
-    --main-bg-color: #f4f4f4;
-    --bg-color: #f4f4f4;
-    --m-color: #FFFFFF;
-    --second-bg-color: #e3e8ed;
-    --circle-color: #dcdcdc;
-    --effect-color: #0494ac;
-    --font-color: #111417;
-    --second-font-color: #697078;
-    --nav-color: #dddddd;
-    --hover-btn: #067A8F;
-    --border-color: rgba(0, 0, 0, 0.08);
-    --nav-scrolled-bg: #ffffffc1;
-    --button-hover: #e3e3e3;
-    --button-bg: #a6a6a6;
-    --button-focus: #1c4d4e;
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-MainbgColor: var(--main-bg-color);
+    --color-bgColor: var(--bg-color);
+    --color-MColor: var(--m-color);
+    --color-SecondbgColor: var(--second-bg-color);
+    --color-cricleColor: var(--circle-color);
+    --color-effectColor: var(--effect-color);
+    --color-fontColor: var(--font-color);
+    --color-secondfontColor: var(--second-font-color);
+    --color-navColor: var(--nav-color);
+    --color-hoverBtn: var(--hover-btn);
+    --color-buttonHover: var(--button-hover);
+    --color-buttonBg: var(--button-bg-color);
+    --color-buttonFont: var(--button-focus);
+    --color-borderColor: var(--border-color);
+    --color-CodeColor: var(--code-color);
+    --color-SecondryFontColor: var(--secondry-font-color);
+
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-destructive: var(--destructive);
+    --color-destructive-foreground: var(--destructive-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+
+    --radius-lg: var(--radius);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-sm: calc(var(--radius) - 4px);
+
+    --font-sans: 'Geist Variable', sans-serif;
 }
 
-.dark {
+:root {
     --main-bg-color: #1212123b;
     --bg-color: #1e1e1e;
     --m-color: #121212;
@@ -36,7 +59,7 @@
     --circle-color: rgb(43, 43, 43);
     --effect-color: #00FFF7;
     --font-color: #FFFFFF;
-    --second-font-color: #B3B3B3;
+    --second-font-color: #e4e4e4;
     --nav-color: #1B1b1b;
     --hover-btn: #01e2da;
     --border-color: rgba(255, 255, 255, 0.1);
@@ -44,6 +67,67 @@
     --button-hover: #1e1e1e;
     --button-bg: rgba(227, 227, 227, 0);
     --button-focus: #00FFF7;
+    --code-color: #af90ef;
+    --secondry-font-color: #ffc757;
+
+    --background: oklch(1 0 0);
+    --foreground: oklch(0.145 0 0);
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.145 0 0);
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.145 0 0);
+    --primary: rgb(43, 43, 43);
+    --primary-foreground: oklch(0.985 0 0);
+    --secondary: oklch(0.97 0 0);
+    --secondary-foreground: oklch(0.205 0 0);
+    --muted: oklch(0.97 0 0);
+    --muted-foreground: oklch(0.556 0 0);
+    --accent: oklch(0.97 0 0);
+    --accent-foreground: oklch(0.205 0 0);
+    --destructive: oklch(0.577 0.245 27.325);
+    --border: oklch(0.922 0 0);
+    --input: oklch(0.922 0 0);
+    --ring: oklch(0.708 0 0);
+    --radius: 0.625rem;
+}
+
+.dark {
+    --main-bg-color: #f4f4f4;
+    --bg-color: #f4f4f4;
+    --m-color: #FFFFFF;
+    --second-bg-color: #e3e8ed;
+    --circle-color: #dcdcdc;
+    --effect-color: #0494ac;
+    --font-color: #111417;
+    --second-font-color: #36393e;
+    --nav-color: #dddddd;
+    --hover-btn: #067A8F;
+    --border-color: rgba(0, 0, 0, 0.08);
+    --nav-scrolled-bg: #ffffffc1;
+    --button-hover: #e3e3e3;
+    --button-bg: #a6a6a6;
+    --button-focus: #1c4d4e;
+    --code-color: #4b3873;
+    --secondry-font-color: #ff9d2c;
+
+    --background: oklch(0.145 0 0);
+    --foreground: oklch(0.985 0 0);
+    --card: oklch(0.205 0 0);
+    --card-foreground: oklch(0.985 0 0);
+    --popover: oklch(0.205 0 0);
+    --popover-foreground: oklch(0.985 0 0);
+    --primary: oklch(0.873 0 89.876);
+    --primary-foreground: oklch(0.205 0 0);
+    --secondary: oklch(0.269 0 0);
+    --secondary-foreground: oklch(0.985 0 0);
+    --muted: oklch(0.269 0 0);
+    --muted-foreground: oklch(0.708 0 0);
+    --accent: oklch(0.269 0 0);
+    --accent-foreground: oklch(0.985 0 0);
+    --destructive: oklch(0.704 0.191 22.216);
+    --border: oklch(1 0 0 / 10%);
+    --input: oklch(1 0 0 / 15%);
+    --ring: oklch(0.556 0 0);
 }
 
 body{
@@ -55,12 +139,15 @@ body{
     color: var(--font-color);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .logoFont{
     font-family: "Delius", cursive;
 }
+
 .span{
     text-shadow: 0 0 5px var(--effect-color), 0 0 15px var(--effect-color);
 }
+
 .buttonLight{
     background-color: transparent;
     border: 1px solid var(--font-color) ;
@@ -68,15 +155,18 @@ body{
     box-shadow: none;
     transition: all 0.2s;
 }
+
 .buttonLight:hover{
     background-color: var(--second-bg-color);
     color: var(--font-color);
     border: 1px solid var(--effect-color);
     box-shadow: 0px 0px 7px var(--effect-color);
 }
+
 #Home{
     overflow: hidden;
 }
+
 .container{
     width: 85%;
     margin-inline:auto;
@@ -130,8 +220,6 @@ ul li{
 .LinkBtn{
     @apply border border-fontColor text-[1rem] text-effectColor p-2 rounded-lg hover:border-effectColor hover:text-fontColor hover:shadow-[0px_0px_12px_#01cabc]
 }
-/* Accessibility: a visible, high-contrast focus ring for keyboard users
-   on any element that doesn't already define its own focus style. */
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -139,4 +227,87 @@ textarea:focus-visible,
 select:focus-visible {
     outline: 2px solid var(--effect-color);
     outline-offset: 2px;
+}
+
+@layer base {
+  .theme {
+        --font-heading: var(--font-sans);
+        --font-sans: 'Geist Variable', sans-serif;
+    }
+  :root {
+        --background: oklch(1 0 0);
+        --foreground: oklch(0.145 0 0);
+        --card: oklch(1 0 0);
+        --card-foreground: oklch(0.145 0 0);
+        --popover: oklch(1 0 0);
+        --popover-foreground: oklch(0.145 0 0);
+        --primary: oklch(0.205 0 0);
+        --primary-foreground: oklch(0.985 0 0);
+        --secondary: oklch(0.97 0 0);
+        --secondary-foreground: oklch(0.205 0 0);
+        --muted: oklch(0.97 0 0);
+        --muted-foreground: oklch(0.556 0 0);
+        --accent: oklch(0.97 0 0);
+        --accent-foreground: oklch(0.205 0 0);
+        --destructive: oklch(0.577 0.245 27.325);
+        --border: oklch(0.922 0 0);
+        --input: oklch(0.922 0 0);
+        --ring: oklch(0.708 0 0);
+        --chart-1: oklch(0.87 0 0);
+        --chart-2: oklch(0.556 0 0);
+        --chart-3: oklch(0.439 0 0);
+        --chart-4: oklch(0.371 0 0);
+        --chart-5: oklch(0.269 0 0);
+        --radius: 0.625rem;
+        --sidebar: oklch(0.985 0 0);
+        --sidebar-foreground: oklch(0.145 0 0);
+        --sidebar-primary: oklch(0.205 0 0);
+        --sidebar-primary-foreground: oklch(0.985 0 0);
+        --sidebar-accent: oklch(0.97 0 0);
+        --sidebar-accent-foreground: oklch(0.205 0 0);
+        --sidebar-border: oklch(0.922 0 0);
+        --sidebar-ring: oklch(0.708 0 0);
+    }
+  .dark {
+        --background: oklch(0.145 0 0);
+        --foreground: oklch(0.985 0 0);
+        --card: oklch(0.205 0 0);
+        --card-foreground: oklch(0.985 0 0);
+        --popover: oklch(0.205 0 0);
+        --popover-foreground: oklch(0.985 0 0);
+        --primary: oklch(0.922 0 0);
+        --primary-foreground: oklch(0.205 0 0);
+        --secondary: oklch(0.269 0 0);
+        --secondary-foreground: oklch(0.985 0 0);
+        --muted: oklch(0.269 0 0);
+        --muted-foreground: oklch(0.708 0 0);
+        --accent: oklch(0.269 0 0);
+        --accent-foreground: oklch(0.985 0 0);
+        --destructive: oklch(0.704 0.191 22.216);
+        --border: oklch(1 0 0 / 10%);
+        --input: oklch(1 0 0 / 15%);
+        --ring: oklch(0.556 0 0);
+        --chart-1: oklch(0.87 0 0);
+        --chart-2: oklch(0.556 0 0);
+        --chart-3: oklch(0.439 0 0);
+        --chart-4: oklch(0.371 0 0);
+        --chart-5: oklch(0.269 0 0);
+        --sidebar: oklch(0.205 0 0);
+        --sidebar-foreground: oklch(0.985 0 0);
+        --sidebar-primary: oklch(0.488 0.243 264.376);
+        --sidebar-primary-foreground: oklch(0.985 0 0);
+        --sidebar-accent: oklch(0.269 0 0);
+        --sidebar-accent-foreground: oklch(0.985 0 0);
+        --sidebar-border: oklch(1 0 0 / 10%);
+        --sidebar-ring: oklch(0.556 0 0);
+    }
+  * {
+    @apply border-border outline-ring/50;
+    }
+  body {
+    @apply bg-background text-foreground;
+    }
+  html {
+    @apply font-sans;
+    }
 }

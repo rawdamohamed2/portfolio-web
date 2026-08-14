@@ -2,12 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className=" py-5 bg-MainbgColor">
-      <div
-        className="container grid grid-cols-1 gap-4"
-        data-aos="zoom-in"
-        data-aos-delay="200"
-      >
+    <footer className=" py-5 bg-MColor">
+      <div className="container grid grid-cols-1 gap-4">
         <div className="text-center">
           <h3 className="md:text-3xl text-2xl py-3 ">
             Thank you for visiting{" "}

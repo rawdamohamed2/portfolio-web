@@ -6,7 +6,8 @@
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755119495/game_nhhoyj.png",
     "linkDemo": "https://rawdamohamed2.github.io/Game-Reviews/",
     "GitHub": "https://github.com/rawdamohamed2/Game-Reviews",
-    "Vanilla": true
+    "Vanilla": true,
+    "tech": ["HTML", "CSS", "Bootstrap", "JavaScript"]
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755119505/weather_v8does.png",
     "linkDemo": "https://rawdamohamed2.github.io/weather-Web/",
     "GitHub": "https://github.com/rawdamohamed2/weather-Web",
-    "Vanilla": true
+    "Vanilla": true,
+    "tech": ["HTML", "CSS", "Bootstrap", "JavaScript"]
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755119477/fokir_i3xlaq.png",
     "linkDemo": "https://rawdamohamed2.github.io/Fokir-Web/",
     "GitHub": "https://github.com/rawdamohamed2/Fokir-Web",
-    "Vanilla": true
+    "Vanilla": true,
+    "tech": ["HTML", "CSS", "Bootstrap", "JavaScript"]
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755119455/curd_s3drlq.png",
     "linkDemo": "https://rawdamohamed2.github.io/Product-CRUD/",
     "GitHub": "https://github.com/rawdamohamed2/Product-CRUD",
-    "Vanilla": true
+    "Vanilla": true,
+    "tech": ["HTML", "Bootstrap", "JavaScript", "localStorage"]
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755119485/gallery_lzdqpg.png",
     "linkDemo": "https://rawdamohamed2.github.io/CodeAlpha_ImageGallery/",
     "GitHub": "https://github.com/rawdamohamed2/CodeAlpha_ImageGallery",
-    "Vanilla": true
+    "Vanilla": true,
+    "tech": ["HTML", "CSS", "Bootstrap", "JavaScript", "localStorage"]
   },
   {
     "id": 6,
@@ -50,7 +55,8 @@
     "description": "My first React project is a A responsive portfolio website that showcases personal projects and skills. It provides smooth scrolling, active link highlighting, interactive animations, and a functional contact form with validation, built using React and Tailwind CSS.",
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755119500/Portfolio_m2oik8.png",
     "linkDemo": "https://rawdamohamed.netlify.app/",
-    "GitHub": "https://github.com/rawdamohamed2/code_sentinel_PortfolioWebsite"
+    "GitHub": "https://github.com/rawdamohamed2/code_sentinel_PortfolioWebsite",
+    "tech": ["React", "Tailwind CSS"]
   },
   {
     "id": 7,
@@ -58,7 +64,8 @@
     "description": "A responsive calculator website that allows users to perform basic computations. It provides a dynamic calculator system that enables users to handle basic arithmetic operations, keyboard input, history tracking, and memory functions, built with React and Tailwind CSS.",
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755119447/Calculator_fmwnfx.png",
     "linkDemo": "https://rawdamohamed2.github.io/CodeAlpha_Calculator/",
-    "GitHub": "https://github.com/rawdamohamed2/CodeAlpha_Calculator"
+    "GitHub": "https://github.com/rawdamohamed2/CodeAlpha_Calculator",
+    "tech": ["React", "Tailwind CSS"]
   },
   {
     "id": 8,
@@ -66,7 +73,8 @@
     "description": "A responsive to-do list website that allows users to manage daily tasks. It provides a dynamic task system that enables users to create, update, delete, and mark tasks as complete with filtering and persistence using React, Tailwind CSS, and localStorage.",
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755372551/Todolist_e7kqss.png",
     "linkDemo": "https://todolistrm.netlify.app/",
-    "GitHub": "https://github.com/rawdamohamed2/code_sentinel_TodoListApp"
+    "GitHub": "https://github.com/rawdamohamed2/code_sentinel_TodoListApp",
+    "tech": ["React", "Tailwind CSS", "localStorage"]
   },
   {
     "id": 9,
@@ -74,7 +82,8 @@
     "description": "A responsive product card app that displays product details in a simple card view. It provides a dynamic layout that shows the product name, image, price, and description, with a clean design, built with React and Tailwind CSS.",
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755372617/prouctcard_swuibz.png",
     "linkDemo": "https://projectcardrm.netlify.app/",
-    "GitHub": "https://github.com/rawdamohamed2/code_sentinel_ProductCard"
+    "GitHub": "https://github.com/rawdamohamed2/code_sentinel_ProductCard",
+    "tech": ["React", "Tailwind CSS"]
   },
   {
     "id": 10,
@@ -83,7 +92,17 @@
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1758138474/cinehub-movieapp.netlify.app__rs3whd.png",
     "linkDemo": "https://cinehub-movieapp.netlify.app/",
     "GitHub": "https://github.com/rawdamohamed2/movieApp",
-    "Vanilla": false
+    "Vanilla": false,
+    "tech": [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Context API",
+      "Axios",
+      "React Router",
+      "TMDb API",
+      "JWT"
+    ]
   },
   {
     "id": 11,
@@ -92,7 +111,8 @@
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1758138505/clipboard-landing1.netlify.app__h39fsc.png",
     "linkDemo": "https://clipboard-landing1.netlify.app/",
     "GitHub": "https://github.com/rawdamohamed2/clipboard-landing-page",
-    "Vanilla": false
+    "Vanilla": false,
+    "tech": ["React", "Tailwind CSS"]
   },
   {
     "id": 12,
@@ -101,7 +121,8 @@
     "image": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1773657668/sportswear-ecommerce-eight.vercel.app__l77wic.png",
     "linkDemo": "https://sportswear-ecommerce-eight.vercel.app/",
     "GitHub": "https://github.com/rawdamohamed2/sportswear-ecommerce",
-    "Next": true
+    "Next": true,
+    "tech": ["Next.js", "TypeScript", "Tailwind CSS", "Zustand", "Supabase"]
   },
   {
     "id": 13,
@@ -111,7 +132,15 @@
     "linkDemo": "https://github.com/Basta97/E-COMMERCE-Web-Master",
     "GitHub": "https://github.com/Basta97/E-COMMERCE-Web-Master",
     "Next": true,
-    "demo": false
+    "demo": false,
+    "tech": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "Radix UI"
+    ]
   },
   {
     "id": 14,
@@ -121,6 +150,7 @@
     "linkDemo": "https://github.com/hussain-ELshepeny/E-learning",
     "GitHub": "https://github.com/hussain-ELshepeny/E-learning",
     "Vanilla": false,
-    "demo": false
+    "demo": false,
+    "tech": ["React", "Tailwind CSS"]
   }
 ]
