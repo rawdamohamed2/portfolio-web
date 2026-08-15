@@ -48,7 +48,7 @@
     "title": "My Portfolio",
     "shortDescription": "My first React project — a responsive personal portfolio showcasing projects, skills, and a working contact form.",
     "description": "My Portfolio was my first React project: a responsive portfolio website that showcases my personal projects and technical skills. It features smooth scrolling navigation with active link highlighting, interactive animations that bring the page to life, and a fully functional contact form with input validation. The project was an important step in learning React fundamentals and component-based architecture, built using React and Tailwind CSS. A personal project.",
-    "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755119500/Portfolio_m2oik8.png",
+    "image": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1786757273/rawdamohamed.vercel.app__omsycc.png",
     "linkDemo": "https://rawdamohamed.vercel.app/",
     "GitHub": "https://github.com/rawdamohamed2/portfolio-web",
     "tech": ["React", "Tailwind CSS"]
