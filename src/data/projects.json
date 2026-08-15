@@ -2,7 +2,8 @@
   {
     "id": 1,
     "title": "GameAtlas",
-    "description": "A responsive game website. It fetches and displays game data from an API in styled cards with modals for details. It also allows users to filter games by category and It allows users to read detailed reviews. built with HTML, CSS, Bootstrap, and JavaScript for API integration.",
+    "shortDescription": "A responsive game reviews website powered by a live API, letting users browse titles, filter by category, and read detailed reviews in styled cards.",
+    "description": "GameAtlas is a responsive game website that fetches and displays real game data from an external API in clean, styled cards. Users can filter games by category to quickly find what they're looking for, open a detailed modal for any title, and read in-depth reviews before deciding what to play next. The project focuses on smooth API integration, dynamic rendering, and a mobile-friendly browsing experience, built with HTML, CSS, Bootstrap, and JavaScript. Built as a training task at NTI (National Telecommunication Institute).",
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755119495/game_nhhoyj.png",
     "linkDemo": "https://rawdamohamed2.github.io/Game-Reviews/",
     "GitHub": "https://github.com/rawdamohamed2/Game-Reviews",
@@ -12,7 +13,8 @@
   {
     "id": 2,
     "title": "SkyCast",
-    "description": "A responsive weather website that fetches real-time weather data using an external API. It displays current temperature, weather conditions, and city-specific information with a search option for any country, built with HTML, CSS, Bootstrap, and JavaScript for API integration.",
+    "shortDescription": "A responsive weather app that fetches real-time conditions for any city, with instant search and a clean, at-a-glance display.",
+    "description": "SkyCast is a responsive weather website that fetches real-time weather data using an external API. It displays current temperature, weather conditions, and city-specific information, with a search option that works for any country in the world. The interface is designed to surface the most important weather details at a glance, with a clean layout that adapts smoothly across devices, built with HTML, CSS, Bootstrap, and JavaScript for the API integration. Built as a training task at NTI (National Telecommunication Institute).",
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755119505/weather_v8does.png",
     "linkDemo": "https://rawdamohamed2.github.io/weather-Web/",
     "GitHub": "https://github.com/rawdamohamed2/weather-Web",
@@ -21,18 +23,9 @@
   },
   {
     "id": 3,
-    "title": "Fokir Portfolio",
-    "description": "A personal portfolio website inspired by the Fokir template. It showcases projects, skills, and contact details with responsive design for different screen sizes with smooth scrolling, interactive UI elements, and mobile-friendly design, built with HTML, CSS, Bootstrap, and JavaScript.",
-    "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755119477/fokir_i3xlaq.png",
-    "linkDemo": "https://rawdamohamed2.github.io/Fokir-Web/",
-    "GitHub": "https://github.com/rawdamohamed2/Fokir-Web",
-    "Vanilla": true,
-    "tech": ["HTML", "CSS", "Bootstrap", "JavaScript"]
-  },
-  {
-    "id": 4,
     "title": "Product Manager",
-    "description": "A responsive CRUD system website that allows users to manage product records. It offers a complete CRUD (Create, Read, Update, Delete) functionality where users can add, edit, and remove product details with persistent storage using localStorage, built with HTML, Bootstrap, and JavaScript.",
+    "shortDescription": "A full CRUD system for managing product records, with persistent storage so data stays saved between sessions.",
+    "description": "Product Manager is a responsive CRUD system website that allows users to manage product records with a complete Create, Read, Update, and Delete workflow. Users can add new products with details like name, price, type, and quantity, search through existing records by name, edit any entry, or remove it entirely. All changes are saved directly in the browser using localStorage, so the product list persists across sessions without needing a backend, built with HTML, Bootstrap, and JavaScript.",
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755119455/curd_s3drlq.png",
     "linkDemo": "https://rawdamohamed2.github.io/Product-CRUD/",
     "GitHub": "https://github.com/rawdamohamed2/Product-CRUD",
@@ -40,57 +33,43 @@
     "tech": ["HTML", "Bootstrap", "JavaScript", "localStorage"]
   },
   {
-    "id": 5,
+    "id": 4,
     "title": "PixelShelf",
-    "description": "A responsive gallery website that allows users to browse and filter images by category. It provides interactive features including modal previews, light and dark modes, and a favorites option with data persistence using localStorage, built with HTML, CSS, Bootstrap, and JavaScript.",
+    "shortDescription": "A responsive image gallery with category filtering, modal previews, favorites, and light/dark modes.",
+    "description": "PixelShelf is a responsive gallery website that allows users to browse and filter images by category for a more focused viewing experience. It includes interactive features such as modal previews for a closer look at any image, a light/dark mode toggle for comfortable viewing in any environment, and a favorites option so users can bookmark images they like. All favorites and preferences persist using localStorage, built with HTML, CSS, Bootstrap, and JavaScript. Built as part of my internship at CodeAlpha.",
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755119485/gallery_lzdqpg.png",
-    "linkDemo": "https://rawdamohamed2.github.io/CodeAlpha_ImageGallery/",
-    "GitHub": "https://github.com/rawdamohamed2/CodeAlpha_ImageGallery",
+    "linkDemo": "https://rawdamohamed2.github.io/ImageGallery/",
+    "GitHub": "https://github.com/rawdamohamed2/ImageGallery",
     "Vanilla": true,
     "tech": ["HTML", "CSS", "Bootstrap", "JavaScript", "localStorage"]
   },
   {
-    "id": 6,
+    "id": 5,
     "title": "My Portfolio",
-    "description": "My first React project is a A responsive portfolio website that showcases personal projects and skills. It provides smooth scrolling, active link highlighting, interactive animations, and a functional contact form with validation, built using React and Tailwind CSS.",
+    "shortDescription": "My first React project — a responsive personal portfolio showcasing projects, skills, and a working contact form.",
+    "description": "My Portfolio was my first React project: a responsive portfolio website that showcases my personal projects and technical skills. It features smooth scrolling navigation with active link highlighting, interactive animations that bring the page to life, and a fully functional contact form with input validation. The project was an important step in learning React fundamentals and component-based architecture, built using React and Tailwind CSS. A personal project.",
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755119500/Portfolio_m2oik8.png",
-    "linkDemo": "https://rawdamohamed.netlify.app/",
-    "GitHub": "https://github.com/rawdamohamed2/code_sentinel_PortfolioWebsite",
+    "linkDemo": "https://rawdamohamed.vercel.app/",
+    "GitHub": "https://github.com/rawdamohamed2/portfolio-web",
     "tech": ["React", "Tailwind CSS"]
   },
   {
-    "id": 7,
-    "title": "ReactCalc",
-    "description": "A responsive calculator website that allows users to perform basic computations. It provides a dynamic calculator system that enables users to handle basic arithmetic operations, keyboard input, history tracking, and memory functions, built with React and Tailwind CSS.",
-    "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755119447/Calculator_fmwnfx.png",
-    "linkDemo": "https://rawdamohamed2.github.io/CodeAlpha_Calculator/",
-    "GitHub": "https://github.com/rawdamohamed2/CodeAlpha_Calculator",
-    "tech": ["React", "Tailwind CSS"]
-  },
-  {
-    "id": 8,
+    "id": 6,
     "title": "TickIt",
-    "description": "A responsive to-do list website that allows users to manage daily tasks. It provides a dynamic task system that enables users to create, update, delete, and mark tasks as complete with filtering and persistence using React, Tailwind CSS, and localStorage.",
+    "shortDescription": "A to-do list app for creating, updating, and tracking daily tasks, with filtering and persistent storage.",
+    "description": "TickIt is a responsive to-do list website that helps users manage their daily tasks efficiently. It provides a dynamic task system that lets users create new tasks, update existing ones, delete tasks they no longer need, and mark tasks as complete. Tasks can be filtered by status (e.g. all, active, completed), and everything is saved using localStorage so the task list stays intact between visits, built with React, Tailwind CSS, and localStorage. Built as part of the Code Sentinel training program.",
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755372551/Todolist_e7kqss.png",
-    "linkDemo": "https://todolistrm.netlify.app/",
-    "GitHub": "https://github.com/rawdamohamed2/code_sentinel_TodoListApp",
+    "linkDemo": "https://to-do-list-app-pi-eight.vercel.app/",
+    "GitHub": "https://github.com/rawdamohamed2/To-do-list-app",
     "tech": ["React", "Tailwind CSS", "localStorage"]
   },
   {
-    "id": 9,
-    "title": "prodect Card",
-    "description": "A responsive product card app that displays product details in a simple card view. It provides a dynamic layout that shows the product name, image, price, and description, with a clean design, built with React and Tailwind CSS.",
-    "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1755372617/prouctcard_swuibz.png",
-    "linkDemo": "https://projectcardrm.netlify.app/",
-    "GitHub": "https://github.com/rawdamohamed2/code_sentinel_ProductCard",
-    "tech": ["React", "Tailwind CSS"]
-  },
-  {
-    "id": 10,
+    "id": 7,
     "title": "movie App",
-    "description": "A responsive movie and TV browsing app with authentication. It includes login/register using JWT with Joi validation, search across movies and TV, filtering, sorting, and actor profiles with IMDb links. Built with React, Vite, Tailwind, Context API, Axios, React Router, and TMDb API.",
+    "shortDescription": "A movie & TV browsing app with secure authentication, powerful search and filtering, and detailed actor profiles with full filmographies.",
+    "description": "This movie and TV browsing app offers a complete viewing discovery experience with full user authentication. Users can register and log in securely using JWT, with form inputs validated through Joi. Once inside, they can search across both movies and TV shows, filter and sort results to narrow down what they're looking for, and explore detailed actor profiles — including their full filmography and linked works — with direct links out to IMDb for more information. All content is powered live by the TMDb API, built with React, Vite, Tailwind CSS, Context API, Axios, and React Router.",
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1758138474/cinehub-movieapp.netlify.app__rs3whd.png",
-    "linkDemo": "https://cinehub-movieapp.netlify.app/",
+    "linkDemo": "https://cinehub-movieapp.vercel.app/",
     "GitHub": "https://github.com/rawdamohamed2/movieApp",
     "Vanilla": false,
     "tech": [
@@ -105,11 +84,12 @@
     ]
   },
   {
-    "id": 11,
+    "id": 8,
     "title": "Clipboard Landing Page",
-    "description": "A responsive landing page for the Clipboard app built with React and Tailwind CSS. It highlights product features, testimonials, and call-to-action sections with a clean design and mobile-first layout.",
+    "shortDescription": "A clean, mobile-first landing page for the Clipboard app, highlighting features, testimonials, and calls to action.",
+    "description": "This is a responsive landing page built for the Clipboard app, designed with a clean, mobile-first approach. The page highlights the product's key features in a clear, scannable layout, showcases user testimonials to build trust, and includes call-to-action sections that guide visitors toward downloading the app. Every section was built to closely match the provided design across all screen sizes, built with React and Tailwind CSS. Built as a Frontend Mentor challenge.",
     "image": "https://res.cloudinary.com/dw956xm88/image/upload/v1758138505/clipboard-landing1.netlify.app__h39fsc.png",
-    "linkDemo": "https://clipboard-landing1.netlify.app/",
+    "linkDemo": "https://clipboard-landing-page-mu-drab.vercel.app/",
     "GitHub": "https://github.com/rawdamohamed2/clipboard-landing-page",
     "Vanilla": false,
     "tech": ["React", "Tailwind CSS"]
@@ -117,17 +97,28 @@
   {
     "id": 12,
     "title": "Sportswear E-Commerce Website",
-    "description": "A modern and responsive sportswear e-commerce web application with product browsing, filtering by category and brand, shopping cart, and order tracking with status tabs. Built with Next.js, TypeScript, Tailwind CSS, Zustand, and Supabase.",
+    "shortDescription": "A modern sportswear e-commerce platform with product filtering, a shopping cart, and order tracking.",
+    "description": "This sportswear e-commerce platform gives users a complete online shopping experience, from browsing to checkout. Products can be filtered by category and brand to help shoppers find exactly what they need, added to a persistent shopping cart, and tracked afterward through status tabs (such as pending, shipped, and delivered). The app is built on Next.js for performance and SEO, with Supabase handling authentication and data, and Zustand managing cart and UI state, built with Next.js, TypeScript, Tailwind CSS, Zustand, and Supabase. Built as a task at Web Masters.",
     "image": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1773657668/sportswear-ecommerce-eight.vercel.app__l77wic.png",
     "linkDemo": "https://sportswear-ecommerce-eight.vercel.app/",
     "GitHub": "https://github.com/rawdamohamed2/sportswear-ecommerce",
     "Next": true,
-    "tech": ["Next.js", "TypeScript", "Tailwind CSS", "Zustand", "Supabase"]
+    "tech": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Zustand",
+      "Supabase",
+      "Zod",
+      "react-hook-form",
+      "sonner"
+    ]
   },
   {
     "id": 13,
     "title": "E-Commerce Web Application",
-    "description": "A full-featured e-commerce web application built with Next.js App Router, React, TypeScript, and Redux Toolkit. Includes authentication, product browsing, cart management with guest sync, token refresh handling, and responsive UI using Tailwind CSS and Radix UI.",
+    "shortDescription": "A full-featured e-commerce app with authentication, guest cart sync, and automatic token refresh handling.",
+    "description": "This is a full-featured e-commerce web application built with the Next.js App Router, React, and TypeScript, using Redux Toolkit for state management. It includes complete authentication flows, product browsing, and cart management that syncs guest carts once a user logs in. Token refresh handling runs behind the scenes to keep sessions valid without interrupting the user, and the interface is built with Tailwind CSS and Radix UI for accessible, responsive components. Built as part of the Web Masters program, in a team where we divided the work among members.",
     "image": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1773658166/192.168.56.1_3000__cnhi0k.png",
     "linkDemo": "https://github.com/Basta97/E-COMMERCE-Web-Master",
     "GitHub": "https://github.com/Basta97/E-COMMERCE-Web-Master",
@@ -145,7 +136,8 @@
   {
     "id": 14,
     "title": "E-Learning Platform",
-    "description": "An e-learning web application with admin dashboard, home page, lessons management, and online exams. Allows admins to create lessons and manage course content with a user-friendly interface.",
+    "shortDescription": "An e-learning platform with an admin dashboard for managing lessons, courses, and online exams.",
+    "description": "This e-learning web application provides a full learning management experience with an admin dashboard, a home page, lessons management, and online exams. Admins can create new lessons, organize course content, and manage the overall structure of the platform through a user-friendly interface, making it easier to build and maintain educational content without technical overhead. Built as part of the Web Masters program, in a team where we divided the work among members.",
     "image": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1773658484/localhost_5174__bwq9eu.png",
     "linkDemo": "https://github.com/hussain-ELshepeny/E-learning",
     "GitHub": "https://github.com/hussain-ELshepeny/E-learning",

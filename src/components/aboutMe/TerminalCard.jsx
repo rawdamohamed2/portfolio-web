@@ -52,11 +52,7 @@ const TerminalCard = () => {
   }, []);
 
   return (
-    <div
-      className="bg-bgColor md:pt-2 pt-0 sm:pb-5 md:pb-1 min-h-[400px] lg:col-span-2 md:col-span-2 col-span-1 flex justify-center items-center"
-      data-aos="fade-down"
-      data-aos-delay="500"
-    >
+    <div className="bg-bgColor md:pt-2 pt-0 sm:pb-5 md:pb-1 min-h-[400px] lg:col-span-2 md:col-span-2 col-span-1 flex justify-center items-center">
       <style>{`
         @keyframes floatSlow {
           0%, 100% { transform: translateY(0) rotate(0deg); }

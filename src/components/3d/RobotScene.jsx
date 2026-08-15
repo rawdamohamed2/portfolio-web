@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber";
-import RobotInspector from "./RobotInspector";
+import RobotInspector from "./RobotInspector.jsx";
 
 export default function RobotScene() {
   return (

@@ -1,5 +1,6 @@
-import React from "react";
-import TerminalCard from "@/Components/aboutMe/TerminalCard.jsx";
+import React, { useLayoutEffect, useRef } from "react";
+import { aboutAnimation } from "@/animations/aboutAnimations";
+import TerminalCard from "@/components/aboutMe/TerminalCard.jsx";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 
@@ -22,20 +23,31 @@ const links = [
 ];
 
 const AboutMe = () => {
+  const sectionRef = useRef(null);
+
+  useLayoutEffect(() => {
+    const cleanupAnimation = aboutAnimation(sectionRef.current);
+
+    return () => {
+      cleanupAnimation?.();
+    };
+  }, []);
+
   return (
-    <section className="min-h-dvh pt-20 pb-10 bg-transparent flex items-center container h-full mx-auto">
-      <div className="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-10 items-center w-full">
-        <div
-          className="lg:col-span-3 md:col-span-2 col-span-1"
-          data-aos="fade-up"
-          data-aos-delay="500"
-        >
-          <h1 className="md:text-[3.3rem] text-center text-4xl font-bold leading-tight">
+    <section
+      ref={sectionRef}
+      className="about-section relative flex min-h-dvh h-full items-center overflow-hidden bg-transparent px-5 pt-20 pb-10"
+    >
+      <div className="absolute top-40 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-hoverBtn/10 blur-[120px] rounded-full pointer-events-none -z-10" />
+
+      <div className="about-content container relative z-10 grid w-full grid-cols-1 items-center gap-10 md:grid-cols-2 lg:grid-cols-5">
+        <div className="lg:col-span-3 md:col-span-2 col-span-1">
+          <h1 className="about-title relative text-center text-4xl font-bold leading-tight md:text-[3.3rem]">
             About <span className="text-effectColor">Me</span>
           </h1>
 
           <div className="content mt-6 space-y-4">
-            <p className="text-lg leading-relaxed text-secondfontColor/90">
+            <p className="about-text text-lg leading-relaxed text-secondfontColor/90">
               I'm a Frontend Developer and Computer Science graduate from
               Alexandria University, passionate about building modern,
               responsive, and scalable web applications. I specialize in
@@ -43,7 +55,8 @@ const AboutMe = () => {
               experience gained through internships, professional work, and
               real-world projects.
             </p>
-            <p className="text-lg leading-relaxed text-secondfontColor/90">
+
+            <p className="about-text text-lg leading-relaxed text-secondfontColor/90">
               I enjoy turning ideas and Figma designs into clean,
               high-performance user interfaces, integrating REST APIs, and
               writing maintainable, reusable code. I'm a fast learner who values
@@ -52,36 +65,39 @@ const AboutMe = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-y-4 gap-x-6 mt-8 pt-6 border-t border-hoverBtn/15">
+          <div className="about-info mt-8 grid grid-cols-2 gap-x-6 gap-y-4 border-t border-hoverBtn/15 pt-6">
             <div>
-              <p className="text-xs uppercase tracking-widest text-secondfontColor/50 mb-1">
+              <p className="mb-1 text-xs uppercase tracking-widest text-secondfontColor/50">
                 Name
               </p>
               <p className="fontdisplay text-base">Rawda Mohamed Sengab</p>
             </div>
+
             <div>
-              <p className="text-xs uppercase tracking-widest text-secondfontColor/50 mb-1">
+              <p className="mb-1 text-xs uppercase tracking-widest text-secondfontColor/50">
                 Role
               </p>
               <p className="fontdisplay text-base">Frontend Developer</p>
             </div>
+
             <div>
-              <p className="text-xs uppercase tracking-widest text-secondfontColor/50 mb-1">
+              <p className="mb-1 text-xs uppercase tracking-widest text-secondfontColor/50">
                 Location
               </p>
               <p className="fontdisplay text-base">Alexandria, Egypt</p>
             </div>
+
             <div>
-              <p className="text-xs uppercase tracking-widest text-secondfontColor/50 mb-1">
+              <p className="mb-1 text-xs uppercase tracking-widest text-secondfontColor/50">
                 Email
               </p>
-              <p className="fontdisplay text-base break-all">
+              <p className="fontdisplay break-all text-base">
                 rawdamohamedsengab@gmail.com
               </p>
             </div>
           </div>
 
-          <div className="flex flex-wrap gap-3 mt-6">
+          <div className="about-links mt-6 flex flex-wrap gap-3">
             {links.map((link) => (
               <a
                 key={link.label}
@@ -97,9 +113,12 @@ const AboutMe = () => {
           </div>
         </div>
 
-        <TerminalCard />
+        <div className="terminal-card lg:col-span-2">
+          <TerminalCard />
+        </div>
       </div>
     </section>
   );
 };
+
 export default AboutMe;

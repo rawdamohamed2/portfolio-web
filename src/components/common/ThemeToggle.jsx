@@ -1,14 +1,14 @@
 import React from "react";
 import { Sun, Moon } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { useThemeStore } from "@/store/useThemeStore";
+import { useThemeStore } from "@/store/useThemeStore.js";
 
 export default function ThemeToggle() {
   const { t } = useTranslation();
   const theme = useThemeStore((state) => state.theme);
   const toggleTheme = useThemeStore((state) => state.toggleTheme);
   console.log(theme);
-  const isDark = theme === "light";
+  const isDark = theme === "root";
 
   return (
     <button

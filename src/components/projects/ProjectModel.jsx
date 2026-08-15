@@ -22,7 +22,7 @@ const ProjectModel = ({ project }) => {
       <DialogContent
         className="bg-MColor border border-hoverBtn/20 backdrop-blur-sm
                    w-[95vw] sm:max-w-2xl md:max-w-3xl
-                   max-h-[88vh] overflow-y-auto
+                   min-h-[88vh] overflow-y-auto
                    p-0 rounded-2xl"
       >
         <div className="relative w-full h-[220px] md:h-[300px]">

@@ -30,12 +30,6 @@ export default function RobotInspector() {
     loader.load(
       "/models/scene.gltf",
       (gltf) => {
-        console.log("Robot loaded");
-
-        gltf.scene.traverse((object) => {
-          console.log("Name:", object.name, "| Type:", object.type);
-        });
-
         setRobot(gltf.scene);
       },
       undefined,
