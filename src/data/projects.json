@@ -99,7 +99,7 @@
     "title": "Sportswear E-Commerce Website",
     "shortDescription": "A modern sportswear e-commerce platform with product filtering, a shopping cart, and order tracking.",
     "description": "This sportswear e-commerce platform gives users a complete online shopping experience, from browsing to checkout. Products can be filtered by category and brand to help shoppers find exactly what they need, added to a persistent shopping cart, and tracked afterward through status tabs (such as pending, shipped, and delivered). The app is built on Next.js for performance and SEO, with Supabase handling authentication and data, and Zustand managing cart and UI state, built with Next.js, TypeScript, Tailwind CSS, Zustand, and Supabase. Built as a task at Web Masters.",
-    "image": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1773657668/sportswear-ecommerce-eight.vercel.app__l77wic.png",
+    "image": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1786757441/sportswear-ecommerce-eight.vercel.app__6_kwgnrz.png",
     "linkDemo": "https://sportswear-ecommerce-eight.vercel.app/",
     "GitHub": "https://github.com/rawdamohamed2/sportswear-ecommerce",
     "Next": true,
