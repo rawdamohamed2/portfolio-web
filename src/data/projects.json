@@ -51,7 +51,7 @@
     "image": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1786757273/rawdamohamed.vercel.app__omsycc.png",
     "linkDemo": "https://rawdamohamed.vercel.app/",
     "GitHub": "https://github.com/rawdamohamed2/portfolio-web",
-    "tech": ["React", "Tailwind CSS"]
+    "tech": ["React", "Tailwind CSS","Gsap","react-three"]
   },
   {
     "id": 6,
@@ -78,6 +78,7 @@
       "Tailwind CSS",
       "Context API",
       "Axios",
+      "tanStack",
       "React Router",
       "TMDb API",
       "JWT"
@@ -120,7 +121,6 @@
     "shortDescription": "A full-featured e-commerce app with authentication, guest cart sync, and automatic token refresh handling.",
     "description": "This is a full-featured e-commerce web application built with the Next.js App Router, React, and TypeScript, using Redux Toolkit for state management. It includes complete authentication flows, product browsing, and cart management that syncs guest carts once a user logs in. Token refresh handling runs behind the scenes to keep sessions valid without interrupting the user, and the interface is built with Tailwind CSS and Radix UI for accessible, responsive components. Built as part of the Web Masters program, in a team where we divided the work among members.",
     "image": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1773658166/192.168.56.1_3000__cnhi0k.png",
-    "linkDemo": "https://github.com/Basta97/E-COMMERCE-Web-Master",
     "GitHub": "https://github.com/Basta97/E-COMMERCE-Web-Master",
     "Next": true,
     "demo": false,
@@ -139,10 +139,33 @@
     "shortDescription": "An e-learning platform with an admin dashboard for managing lessons, courses, and online exams.",
     "description": "This e-learning web application provides a full learning management experience with an admin dashboard, a home page, lessons management, and online exams. Admins can create new lessons, organize course content, and manage the overall structure of the platform through a user-friendly interface, making it easier to build and maintain educational content without technical overhead. Built as part of the Web Masters program, in a team where we divided the work among members.",
     "image": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1773658484/localhost_5174__bwq9eu.png",
-    "linkDemo": "https://github.com/hussain-ELshepeny/E-learning",
     "GitHub": "https://github.com/hussain-ELshepeny/E-learning",
     "Vanilla": false,
     "demo": false,
     "tech": ["React", "Tailwind CSS"]
+  },
+  {
+    "id": 15,
+    "title": "SkillTrack",
+    "shortDescription": "A developer productivity dashboard for tracking technical skills, projects, career goals, job applications, and interviews.",
+    "description": "Built a responsive developer growth dashboard as a Frontend Development Assignment for TechAI. Implemented skill roadmaps with automatic progress calculation, project tracking, job application management, career goals, and interview reminders. Used Zustand with localStorage for persistent client-side state, React Hook Form and Zod for form handling and validation, and Tailwind CSS with shadcn/ui for a modern, responsive interface.",
+    "image": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1791638902/skill-track-umber.vercel.app__2_os41yd.png",
+    "linkDemo": "https://skill-track-umber.vercel.app/",
+    "GitHub": "https://github.com/rawdamohamed2/skill-Track",
+    "Vanilla": false,
+    "demo": true,
+    "tech": ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui", "Zustand", "React Hook Form", "Zod", "localStorage"]
+  },
+  {
+    "id": 16,
+    "title": "Security Bundle Builder",
+    "shortDescription": "A data-driven security bundle configurator with a 4-step selection flow and a real-time review panel.",
+    "description": "Built a responsive security bundle builder using React, TypeScript, and Zustand, featuring a 4-step configuration flow with a live review panel synchronized through centralized state management. Implemented cart management, product variant selection, separate plan selection, bundle persistence on user action, and checkout validation. Followed a feature-based architecture with reusable UI components and local JSON data.",
+    "image": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1791640185/bundle-builder-umber-five.vercel.app__tknlek.png",
+    "linkDemo": "https://bundle-builder-umber-five.vercel.app/",
+    "GitHub": "https://github.com/rawdamohamed2/bundle-builder",
+    "Vanilla": false,
+    "demo": true,
+    "tech": ["React 19", "TypeScript", "Vite", "Zustand", "React Router", "Tailwind CSS", "shadcn/ui", "Sonner"]
   }
 ]
