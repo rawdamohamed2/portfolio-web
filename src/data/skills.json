@@ -20,6 +20,36 @@
         "icon": "fa-brands fa-react"
     },
     {
+      "title": "Next JS",
+      "percentage": "90",
+      "icon": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1773660037/icons8-nextjs-60_j0r8hp.png"
+    },
+    {
+      "title": "TanStack",
+      "percentage": "70",
+      "icon": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1791642206/idRddU0IJc_logos_tkq9yy.png"
+    },
+    {
+      "title": "Zustand",
+      "percentage": "70",
+      "icon": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1791642248/zustand_1_kmwnfb.svg"
+    },
+    {
+      "title": "React Hook Form",
+      "percentage": "70",
+      "icon": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1791642369/idQYClbHe5_1791642358126_wzhza1.jpg"
+    },
+    {
+      "title": "Zod",
+      "percentage": "70",
+      "icon": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1791642553/idguZ7haU-_logos_mxtxeh.png"
+    },
+    {
+      "title": "Framer Motion",
+      "percentage": "70",
+      "icon": "https://res.cloudinary.com/dlbgzpo7s/image/upload/v1791642533/Framer_id_a7mcriP_0_ehci1o.svg"
+    },
+    {
         "title": "Tailwind CSS",
         "percentage": "80",
         "icon": "https://res.cloudinary.com/dw956xm88/image/upload/v1755121430/tailwindcss_syvfrw.png"
